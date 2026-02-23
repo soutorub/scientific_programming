@@ -10,6 +10,7 @@
   - [Using GitHub Copilot in VS-Code](#using-github-copilot-in-vs-code)
   - [Run OLLAMA in your Codespace](#run-ollama-in-your-codespace)
   - [Get the Kaggle API-key](#get-the-kaggle-api-key)
+  - [PostgreSQL Setup](#postgresql-setup)
 
 ## Module Description
 
@@ -149,3 +150,67 @@ The following video explains how this works: https://www.youtube.com/watch?v=KuB
    - Create a Kaggle account on https://www.kaggle.com.
    - On https://www.kaggle.com/settings -> API -> Create New Token
    - This will trigger the download of kaggle.json, a file containing your API credentials.
+
+## PostgreSQL Setup
+
+A PostgreSQL 16 database is included in your Codespace and starts automatically when the dev container is created. No manual installation or configuration is required — everything is defined in [`.devcontainer/docker-compose.yml`](.devcontainer/docker-compose.yml).
+
+### Connection details
+
+| Parameter | Value     |
+|-----------|-----------|
+| Host      | `db`      |
+| Port      | `5432`    |
+| Database  | `scidb`   |
+| User      | `postgres`|
+| Password  | `geheim`  |
+
+### Verify the database is running
+
+Open a Terminal in your Codespace and run:
+
+```bash
+# Check that the db container is up
+docker ps
+
+# Connect interactively with psql
+psql -h db -p 5432 -U postgres -d scidb
+```
+
+Enter `geheim` when prompted for the password. Type `\q` to exit psql.
+
+### Connect from Python
+
+Use `psycopg2` or `SQLAlchemy` (both are available in the Codespace):
+
+```python
+import psycopg2
+
+conn = psycopg2.connect(
+    host="db",
+    port=5432,
+    dbname="scidb",
+    user="postgres",
+    password="geheim"
+)
+cursor = conn.cursor()
+cursor.execute("SELECT version();")
+print(cursor.fetchone())
+conn.close()
+```
+
+Or with SQLAlchemy:
+
+```python
+from sqlalchemy import create_engine
+
+engine = create_engine("postgresql+psycopg2://postgres:geheim@db:5432/scidb")
+```
+
+### Data persistence
+
+Database data is stored in the Docker volume `postgres-data`, so it persists across Codespace restarts. To reset the database, delete the volume:
+
+```bash
+docker compose -f .devcontainer/docker-compose.yml down -v
+```
