@@ -92,21 +92,62 @@ git remote set-url origin https://github.com/YOUR-USERNAME/scientific_programmin
 
 ## Sync origin with upstream
 
-To sync your fork (origin) and GitHub Codespaces environment with the upstream repository you can use the following Git commands:
+To sync your fork (origin) and GitHub Codespaces environment with the upstream repository, you need to regularly pull the latest course materials. **We recommend doing this before starting each week's exercises.**
+
+### Before syncing
+
+1. Check your current status:
+  ```bash
+  git status
+  ```
+2. If you have uncommitted changes, either commit them or stash them:
+  ```bash
+  # Option A: Commit your changes
+  git add .
+  git commit -m "Your commit message"
+   
+  # Option B: Temporarily stash your changes
+  git stash
+  ```
+
+### Recommended: Merge upstream changes (preserves your work)
+
+This is the **safest approach** as it preserves your local commits and modifications:
 
 ```bash
-# Option (1): Sync your fork/clone to exactly match the upstream (your local changes may be overwritten)
-git fetch upstream
-git checkout master
-git reset --hard upstream/master
-git push origin master --force
-
-# Option (2): Sync your fork/clone with the upstream (your local changes are preserved but merge conflicts may have to be resolved)
 git fetch upstream
 git checkout master
 git merge upstream/master
 git push origin master
 ```
+
+**Note:** If merge conflicts occur, VS Code will help you resolve them using the Merge Editor (see "Solving merge conflicts" section below).
+
+### Advanced: Clean reset to upstream (discards local changes)
+
+**WARNING:** This option will **overwrite all your local changes** on the master branch. Only use this if:
+- You want a completely clean copy of upstream, OR
+- Your local changes are accidentally broken and you want to start fresh
+
+```bash
+git fetch upstream
+git checkout master
+git reset --hard upstream/master
+git push origin master --force
+```
+
+### Alternative: Use rebase (for advanced users)
+
+If you want a cleaner commit history without merge commits:
+
+```bash
+git fetch upstream
+git checkout master
+git rebase upstream/master
+git push origin master --force-with-lease
+```
+
+**Best practice:** Sync at the beginning of each week to ensure you have the latest materials before starting new exercises.
 
 ## Solving merge conflicts
 
