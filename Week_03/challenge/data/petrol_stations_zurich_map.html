@@ -1,0 +1,3988 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7b1f4ce9e911bae6cf07f84b69907fea {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+
+            <style>html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            </style>
+
+            <style>#map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+
+            <script>
+                L_NO_TOUCH = false;
+                L_DISABLE_3D = false;
+            </script>
+
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_7b1f4ce9e911bae6cf07f84b69907fea" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_7b1f4ce9e911bae6cf07f84b69907fea = L.map(
+                "map_7b1f4ce9e911bae6cf07f84b69907fea",
+                {
+                    center: [47.3769, 8.5417],
+                    crs: L.CRS.EPSG3857,
+                    ...{
+  "zoom": 13,
+  "zoomControl": true,
+  "preferCanvas": false,
+}
+
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d68bb885e475ee62e45f4220b1f4b007 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {
+  "minZoom": 0,
+  "maxZoom": 19,
+  "maxNativeZoom": 19,
+  "noWrap": false,
+  "attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors",
+  "subdomains": "abc",
+  "detectRetina": false,
+  "tms": false,
+  "opacity": 1,
+}
+
+            );
+        
+    
+            tile_layer_d68bb885e475ee62e45f4220b1f4b007.addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var circle_68490ec12053636c1c2233d54f109fa1 = L.circle(
+                [47.3769, 8.5417],
+                {"bubblingMouseEvents": true, "color": "steelblue", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "steelblue", "fillOpacity": 0.05, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 5000, "stroke": true, "weight": 3}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            circle_68490ec12053636c1c2233d54f109fa1.bindTooltip(
+                `<div>
+                     5 km radius around Zurich city centre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+            var marker_105310a44bd6e2b6a10a65823a73172f = L.marker(
+                [47.3769, 8.5417],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_7d4f41a445efcc18c9a997f662e66117 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "blue",
+  "iconColor": "white",
+  "icon": "info-sign",
+  "prefix": "glyphicon",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+            marker_105310a44bd6e2b6a10a65823a73172f.bindTooltip(
+                `<div>
+                     Zurich city centre
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_105310a44bd6e2b6a10a65823a73172f.setIcon(icon_7d4f41a445efcc18c9a997f662e66117);
+            
+    
+            var marker_2e89ff3944259208be9300216d4a5e4d = L.marker(
+                [47.3995257, 8.4973287],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_fd9a26b19406ea3712ea1cc4b9290704 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_47e1654cdfc4960e74b4bb908bdf5084 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5ce5b3c88c91646170e1aac658a42aaa = $(`<div id="html_5ce5b3c88c91646170e1aac658a42aaa" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Coop<br>     <b>Operator:</b> Coop Mineraloel<br>     <b>Name:</b> Coop Tankstelle Höngg     </div>`)[0];
+                popup_47e1654cdfc4960e74b4bb908bdf5084.setContent(html_5ce5b3c88c91646170e1aac658a42aaa);
+            
+        
+
+        marker_2e89ff3944259208be9300216d4a5e4d.bindPopup(popup_47e1654cdfc4960e74b4bb908bdf5084)
+        ;
+
+        
+    
+    
+            marker_2e89ff3944259208be9300216d4a5e4d.bindTooltip(
+                `<div>
+                     Coop
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2e89ff3944259208be9300216d4a5e4d.setIcon(icon_fd9a26b19406ea3712ea1cc4b9290704);
+            
+    
+            var marker_029219246e43cb9ca5168017b9a01b91 = L.marker(
+                [47.3815928, 8.5095448],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_a08a93d41c6c9ffdc5209b7720c8bb06 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_769757cd468769d2e1085d3ba6345aca = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7952b7dcef2400e039f01f9708b50691 = $(`<div id="html_7952b7dcef2400e039f01f9708b50691" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Shell<br>     <b>Operator:</b> Shell (Switzerland)<br>     <b>Name:</b> Shell Hardau     </div>`)[0];
+                popup_769757cd468769d2e1085d3ba6345aca.setContent(html_7952b7dcef2400e039f01f9708b50691);
+            
+        
+
+        marker_029219246e43cb9ca5168017b9a01b91.bindPopup(popup_769757cd468769d2e1085d3ba6345aca)
+        ;
+
+        
+    
+    
+            marker_029219246e43cb9ca5168017b9a01b91.bindTooltip(
+                `<div>
+                     Shell
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_029219246e43cb9ca5168017b9a01b91.setIcon(icon_a08a93d41c6c9ffdc5209b7720c8bb06);
+            
+    
+            var marker_3b282011d6638cb9d4bc68d472672476 = L.marker(
+                [47.3811098, 8.4921479],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_3ce3624db149ee6e05d82e6a95a6b7d0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_294042e33b8fa7ac8e4926fe95637f92 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e489a9d369043a1749bbdc6a25f43acb = $(`<div id="html_e489a9d369043a1749bbdc6a25f43acb" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Migrol<br>     <b>Operator:</b> Migrol<br>     <b>Name:</b> Migrol Service Flurstrasse     </div>`)[0];
+                popup_294042e33b8fa7ac8e4926fe95637f92.setContent(html_e489a9d369043a1749bbdc6a25f43acb);
+            
+        
+
+        marker_3b282011d6638cb9d4bc68d472672476.bindPopup(popup_294042e33b8fa7ac8e4926fe95637f92)
+        ;
+
+        
+    
+    
+            marker_3b282011d6638cb9d4bc68d472672476.bindTooltip(
+                `<div>
+                     Migrol
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3b282011d6638cb9d4bc68d472672476.setIcon(icon_3ce3624db149ee6e05d82e6a95a6b7d0);
+            
+    
+            var marker_61b903f0e5eb00c62c4a214bd62dbea4 = L.marker(
+                [47.3374315, 8.5302419],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_24157cd29e870ab3ecea078987c79de6 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_78335f86e122f9c4fe92720c7a6c579b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5a9c58dbbbd13e648ba041d4bffc0e6a = $(`<div id="html_5a9c58dbbbd13e648ba041d4bffc0e6a" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Shell<br>     <b>Operator:</b> nan<br>     <b>Name:</b> Shell Wollishofen     </div>`)[0];
+                popup_78335f86e122f9c4fe92720c7a6c579b.setContent(html_5a9c58dbbbd13e648ba041d4bffc0e6a);
+            
+        
+
+        marker_61b903f0e5eb00c62c4a214bd62dbea4.bindPopup(popup_78335f86e122f9c4fe92720c7a6c579b)
+        ;
+
+        
+    
+    
+            marker_61b903f0e5eb00c62c4a214bd62dbea4.bindTooltip(
+                `<div>
+                     Shell
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_61b903f0e5eb00c62c4a214bd62dbea4.setIcon(icon_24157cd29e870ab3ecea078987c79de6);
+            
+    
+            var marker_d899c4232096aa6d9c655f25640d716d = L.marker(
+                [47.3398175, 8.5298146],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_e12c51e4278c845e6570f0c138b8caa5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95291b52020d0e416c593309c0a9f2fe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f014fec26b97bc3a31606bf711959678 = $(`<div id="html_f014fec26b97bc3a31606bf711959678" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> Avia Osterwalder Zürich<br>     <b>Name:</b> Avia Service Wollishofen     </div>`)[0];
+                popup_95291b52020d0e416c593309c0a9f2fe.setContent(html_f014fec26b97bc3a31606bf711959678);
+            
+        
+
+        marker_d899c4232096aa6d9c655f25640d716d.bindPopup(popup_95291b52020d0e416c593309c0a9f2fe)
+        ;
+
+        
+    
+    
+            marker_d899c4232096aa6d9c655f25640d716d.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d899c4232096aa6d9c655f25640d716d.setIcon(icon_e12c51e4278c845e6570f0c138b8caa5);
+            
+    
+            var marker_c98bd2c015e94cc5990979849035638d = L.marker(
+                [47.3459074, 8.534658],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_35257c954dfd0e95ee75a1de53753644 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_95b5ee72e78923b95934948660671888 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e6b5fafbec9d87cb99c9362d874461db = $(`<div id="html_e6b5fafbec9d87cb99c9362d874461db" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> A.H. Meyer & Cie<br>     <b>Name:</b> Avia Wollishofen Franz     </div>`)[0];
+                popup_95b5ee72e78923b95934948660671888.setContent(html_e6b5fafbec9d87cb99c9362d874461db);
+            
+        
+
+        marker_c98bd2c015e94cc5990979849035638d.bindPopup(popup_95b5ee72e78923b95934948660671888)
+        ;
+
+        
+    
+    
+            marker_c98bd2c015e94cc5990979849035638d.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_c98bd2c015e94cc5990979849035638d.setIcon(icon_35257c954dfd0e95ee75a1de53753644);
+            
+    
+            var marker_8d2dbf5142d826b7782e66427c137d64 = L.marker(
+                [47.3485725, 8.5340966],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_1083dff1dec44bc1bfeead822c8c16c9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6eee92a6db719c4601e37d58d4a2cade = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_db5391c58ff5c2a8ba2fc1770392542a = $(`<div id="html_db5391c58ff5c2a8ba2fc1770392542a" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> BP<br>     <b>Operator:</b> nan<br>     <b>Name:</b> BP Service Wollishofen     </div>`)[0];
+                popup_6eee92a6db719c4601e37d58d4a2cade.setContent(html_db5391c58ff5c2a8ba2fc1770392542a);
+            
+        
+
+        marker_8d2dbf5142d826b7782e66427c137d64.bindPopup(popup_6eee92a6db719c4601e37d58d4a2cade)
+        ;
+
+        
+    
+    
+            marker_8d2dbf5142d826b7782e66427c137d64.bindTooltip(
+                `<div>
+                     BP
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_8d2dbf5142d826b7782e66427c137d64.setIcon(icon_1083dff1dec44bc1bfeead822c8c16c9);
+            
+    
+            var marker_277e8f6347a8bb2d38787c9c11820ef1 = L.marker(
+                [47.3980896, 8.5399105],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_a47e2bbe540de3f95c659c235e7a8ec4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c4b118b944b5ba2a98ac216aec873395 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_17ea51b5f208846258afa222da5fba96 = $(`<div id="html_17ea51b5f208846258afa222da5fba96" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Migrol<br>     <b>Operator:</b> Migrol<br>     <b>Name:</b> Migrol Tankstelle Milchbuck     </div>`)[0];
+                popup_c4b118b944b5ba2a98ac216aec873395.setContent(html_17ea51b5f208846258afa222da5fba96);
+            
+        
+
+        marker_277e8f6347a8bb2d38787c9c11820ef1.bindPopup(popup_c4b118b944b5ba2a98ac216aec873395)
+        ;
+
+        
+    
+    
+            marker_277e8f6347a8bb2d38787c9c11820ef1.bindTooltip(
+                `<div>
+                     Migrol
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_277e8f6347a8bb2d38787c9c11820ef1.setIcon(icon_a47e2bbe540de3f95c659c235e7a8ec4);
+            
+    
+            var marker_65c278ee382283de25ffa1bf88e40534 = L.marker(
+                [47.3695212, 8.5107127],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_5ce1042d6b6001811265bcceae7c97de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_27a4c2406604aaebfbc592293d43b275 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2a5a82a9f37cfb716dfea2d532988547 = $(`<div id="html_2a5a82a9f37cfb716dfea2d532988547" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Independent<br>     <b>Operator:</b> nan<br>     <b>Name:</b> Tankstelle Wyss     </div>`)[0];
+                popup_27a4c2406604aaebfbc592293d43b275.setContent(html_2a5a82a9f37cfb716dfea2d532988547);
+            
+        
+
+        marker_65c278ee382283de25ffa1bf88e40534.bindPopup(popup_27a4c2406604aaebfbc592293d43b275)
+        ;
+
+        
+    
+    
+            marker_65c278ee382283de25ffa1bf88e40534.bindTooltip(
+                `<div>
+                     Independent
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_65c278ee382283de25ffa1bf88e40534.setIcon(icon_5ce1042d6b6001811265bcceae7c97de);
+            
+    
+            var marker_0f3f14a59b39cb46d7783b1abbc9a7e0 = L.marker(
+                [47.3534438, 8.5768921],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_c543b6ecc1391b0b48583f07f5fd61ed = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e62f575980b195f85959e500ce0127e3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1c06b2735508be2fd639dd48e26d4609 = $(`<div id="html_1c06b2735508be2fd639dd48e26d4609" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> BP<br>     <b>Operator:</b> nan<br>     <b>Name:</b> BP Balgrist     </div>`)[0];
+                popup_e62f575980b195f85959e500ce0127e3.setContent(html_1c06b2735508be2fd639dd48e26d4609);
+            
+        
+
+        marker_0f3f14a59b39cb46d7783b1abbc9a7e0.bindPopup(popup_e62f575980b195f85959e500ce0127e3)
+        ;
+
+        
+    
+    
+            marker_0f3f14a59b39cb46d7783b1abbc9a7e0.bindTooltip(
+                `<div>
+                     BP
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0f3f14a59b39cb46d7783b1abbc9a7e0.setIcon(icon_c543b6ecc1391b0b48583f07f5fd61ed);
+            
+    
+            var marker_a3c475407169d68affedd82896ef1200 = L.marker(
+                [47.3860523, 8.5319464],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_8c7d60f23da7e9c15a8d99c625e75bfd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7b65c80b1173e949cda339d5e4290180 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_76d8df3d41abb47040d88684bddbc137 = $(`<div id="html_76d8df3d41abb47040d88684bddbc137" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Migrol<br>     <b>Operator:</b> Migrol<br>     <b>Name:</b> Migrol Service Sihlquai     </div>`)[0];
+                popup_7b65c80b1173e949cda339d5e4290180.setContent(html_76d8df3d41abb47040d88684bddbc137);
+            
+        
+
+        marker_a3c475407169d68affedd82896ef1200.bindPopup(popup_7b65c80b1173e949cda339d5e4290180)
+        ;
+
+        
+    
+    
+            marker_a3c475407169d68affedd82896ef1200.bindTooltip(
+                `<div>
+                     Migrol
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a3c475407169d68affedd82896ef1200.setIcon(icon_8c7d60f23da7e9c15a8d99c625e75bfd);
+            
+    
+            var marker_9addb436cf0d02f1a026e5ec3cea1369 = L.marker(
+                [47.3803229, 8.5463543],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_3067980fc1fcced37d8c525241366095 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4bfe489a4ef3354617c86ec8364525b6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c2b0d6e17387ac9a8d9375e2902c0eb2 = $(`<div id="html_c2b0d6e17387ac9a8d9375e2902c0eb2" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Independent<br>     <b>Operator:</b> nan<br>     <b>Name:</b> Scall     </div>`)[0];
+                popup_4bfe489a4ef3354617c86ec8364525b6.setContent(html_c2b0d6e17387ac9a8d9375e2902c0eb2);
+            
+        
+
+        marker_9addb436cf0d02f1a026e5ec3cea1369.bindPopup(popup_4bfe489a4ef3354617c86ec8364525b6)
+        ;
+
+        
+    
+    
+            marker_9addb436cf0d02f1a026e5ec3cea1369.bindTooltip(
+                `<div>
+                     Independent
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_9addb436cf0d02f1a026e5ec3cea1369.setIcon(icon_3067980fc1fcced37d8c525241366095);
+            
+    
+            var marker_56755c9b30a445eb8e5cd1041317dcae = L.marker(
+                [47.393705, 8.5059844],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_3b0a2f5c3c9267549d34b9dc2df737c0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ae9ac841b174534132d1453314f0ecaf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cc6a92bb4e668efe588246963cc8fb9e = $(`<div id="html_cc6a92bb4e668efe588246963cc8fb9e" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> A.H. Meyer & Cie<br>     <b>Name:</b> Avia Hardturmstrasse     </div>`)[0];
+                popup_ae9ac841b174534132d1453314f0ecaf.setContent(html_cc6a92bb4e668efe588246963cc8fb9e);
+            
+        
+
+        marker_56755c9b30a445eb8e5cd1041317dcae.bindPopup(popup_ae9ac841b174534132d1453314f0ecaf)
+        ;
+
+        
+    
+    
+            marker_56755c9b30a445eb8e5cd1041317dcae.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_56755c9b30a445eb8e5cd1041317dcae.setIcon(icon_3b0a2f5c3c9267549d34b9dc2df737c0);
+            
+    
+            var marker_d7ee8d34edff332541747ee58b4742fc = L.marker(
+                [47.3728411, 8.5211422],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_c2bf709263402ff3c7c3725e5f63a77a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e624024b88559e30542c8c74dad92117 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a9c479c81b3f8e59acec5660b33f3eef = $(`<div id="html_a9c479c81b3f8e59acec5660b33f3eef" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> BP<br>     <b>Operator:</b> nan<br>     <b>Name:</b> BP Service Wiedikon     </div>`)[0];
+                popup_e624024b88559e30542c8c74dad92117.setContent(html_a9c479c81b3f8e59acec5660b33f3eef);
+            
+        
+
+        marker_d7ee8d34edff332541747ee58b4742fc.bindPopup(popup_e624024b88559e30542c8c74dad92117)
+        ;
+
+        
+    
+    
+            marker_d7ee8d34edff332541747ee58b4742fc.bindTooltip(
+                `<div>
+                     BP
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d7ee8d34edff332541747ee58b4742fc.setIcon(icon_c2bf709263402ff3c7c3725e5f63a77a);
+            
+    
+            var marker_a6d53f8b24ab04cb19a84783f6cb56e7 = L.marker(
+                [47.4010238, 8.4915916],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_0c9ad4a4a052e5a38d5b3f0604b6a818 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_96445a9900f42265f22be4a2237bff2d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_77576a99b4ed376a69f9ac4794e616eb = $(`<div id="html_77576a99b4ed376a69f9ac4794e616eb" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Shell<br>     <b>Operator:</b> Moveri<br>     <b>Name:</b> Shell Winzerstrasse     </div>`)[0];
+                popup_96445a9900f42265f22be4a2237bff2d.setContent(html_77576a99b4ed376a69f9ac4794e616eb);
+            
+        
+
+        marker_a6d53f8b24ab04cb19a84783f6cb56e7.bindPopup(popup_96445a9900f42265f22be4a2237bff2d)
+        ;
+
+        
+    
+    
+            marker_a6d53f8b24ab04cb19a84783f6cb56e7.bindTooltip(
+                `<div>
+                     Shell
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a6d53f8b24ab04cb19a84783f6cb56e7.setIcon(icon_0c9ad4a4a052e5a38d5b3f0604b6a818);
+            
+    
+            var marker_42f60987b7a2032b6010f91e41d37bad = L.marker(
+                [47.4141963, 8.518214],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_e077693c591e7dec276c75e6f2aed612 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fbc3332243df51469521cb670fb92071 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a9f7ca9af4e2d01aa6d8886442137e8c = $(`<div id="html_a9f7ca9af4e2d01aa6d8886442137e8c" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Migrol<br>     <b>Operator:</b> Migrol<br>     <b>Name:</b> Migrol Service Glaubten     </div>`)[0];
+                popup_fbc3332243df51469521cb670fb92071.setContent(html_a9f7ca9af4e2d01aa6d8886442137e8c);
+            
+        
+
+        marker_42f60987b7a2032b6010f91e41d37bad.bindPopup(popup_fbc3332243df51469521cb670fb92071)
+        ;
+
+        
+    
+    
+            marker_42f60987b7a2032b6010f91e41d37bad.bindTooltip(
+                `<div>
+                     Migrol
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_42f60987b7a2032b6010f91e41d37bad.setIcon(icon_e077693c591e7dec276c75e6f2aed612);
+            
+    
+            var marker_b81e066edbd28536fd30632432367750 = L.marker(
+                [47.3802915, 8.4940158],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_2e7923b14f0703459bece53999005b91 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2f11c2f6c022ba540a5e0e8c99e74e46 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1fdabc3ae33714a23ace802c4721754b = $(`<div id="html_1fdabc3ae33714a23ace802c4721754b" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Shell<br>     <b>Operator:</b> Shell (Switzerland)<br>     <b>Name:</b> Shell Rautistrasse     </div>`)[0];
+                popup_2f11c2f6c022ba540a5e0e8c99e74e46.setContent(html_1fdabc3ae33714a23ace802c4721754b);
+            
+        
+
+        marker_b81e066edbd28536fd30632432367750.bindPopup(popup_2f11c2f6c022ba540a5e0e8c99e74e46)
+        ;
+
+        
+    
+    
+            marker_b81e066edbd28536fd30632432367750.bindTooltip(
+                `<div>
+                     Shell
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b81e066edbd28536fd30632432367750.setIcon(icon_2e7923b14f0703459bece53999005b91);
+            
+    
+            var marker_55b53bdcb6490c1861c3463ce5b7413b = L.marker(
+                [47.419653, 8.556201],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_7d2f9a13ceaeb94db53441f0b798ad54 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_efb9ed6e3015123a53d8cc11e46f0f9f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d723caa8bcf22923e3550e896a22c7ce = $(`<div id="html_d723caa8bcf22923e3550e896a22c7ce" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Shell<br>     <b>Operator:</b> Migrol<br>     <b>Name:</b> Migrol Service Thurgauerstrasse     </div>`)[0];
+                popup_efb9ed6e3015123a53d8cc11e46f0f9f.setContent(html_d723caa8bcf22923e3550e896a22c7ce);
+            
+        
+
+        marker_55b53bdcb6490c1861c3463ce5b7413b.bindPopup(popup_efb9ed6e3015123a53d8cc11e46f0f9f)
+        ;
+
+        
+    
+    
+            marker_55b53bdcb6490c1861c3463ce5b7413b.bindTooltip(
+                `<div>
+                     Shell
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_55b53bdcb6490c1861c3463ce5b7413b.setIcon(icon_7d2f9a13ceaeb94db53441f0b798ad54);
+            
+    
+            var marker_f594ef16351085c0389bbd90b1125496 = L.marker(
+                [47.3917824, 8.5424928],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_1ec0b7ea0f3bee508d7c110bc82a9ff3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4d27e02d64fb061772599879553983fa = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_befc3f56e56d067fa403d97459bba214 = $(`<div id="html_befc3f56e56d067fa403d97459bba214" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Tamoil<br>     <b>Operator:</b> nan<br>     <b>Name:</b> Tamoil     </div>`)[0];
+                popup_4d27e02d64fb061772599879553983fa.setContent(html_befc3f56e56d067fa403d97459bba214);
+            
+        
+
+        marker_f594ef16351085c0389bbd90b1125496.bindPopup(popup_4d27e02d64fb061772599879553983fa)
+        ;
+
+        
+    
+    
+            marker_f594ef16351085c0389bbd90b1125496.bindTooltip(
+                `<div>
+                     Tamoil
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_f594ef16351085c0389bbd90b1125496.setIcon(icon_1ec0b7ea0f3bee508d7c110bc82a9ff3);
+            
+    
+            var marker_b6527fcece5ede1cc86a9240a02c2463 = L.marker(
+                [47.3674023, 8.4943259],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_4f39e8365948c6ac92318c4a9518ae1c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0334bec05ba3f5018529390e1f1f845 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9a5b75907436ab93b7aba2fa174ef1ff = $(`<div id="html_9a5b75907436ab93b7aba2fa174ef1ff" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Shell<br>     <b>Operator:</b> Migrol<br>     <b>Name:</b> Migrol Service Triemli     </div>`)[0];
+                popup_b0334bec05ba3f5018529390e1f1f845.setContent(html_9a5b75907436ab93b7aba2fa174ef1ff);
+            
+        
+
+        marker_b6527fcece5ede1cc86a9240a02c2463.bindPopup(popup_b0334bec05ba3f5018529390e1f1f845)
+        ;
+
+        
+    
+    
+            marker_b6527fcece5ede1cc86a9240a02c2463.bindTooltip(
+                `<div>
+                     Shell
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_b6527fcece5ede1cc86a9240a02c2463.setIcon(icon_4f39e8365948c6ac92318c4a9518ae1c);
+            
+    
+            var marker_7ad2e2704bfd3a2c22f4f3f53f370a9f = L.marker(
+                [47.3812597, 8.5377769],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_8954522e8cb8dddb87af99d05be0ff48 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d3731572bfa995f121a94ec806844b55 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e1de8936bd26e75de6affe1473a1751d = $(`<div id="html_e1de8936bd26e75de6affe1473a1751d" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> Avia Osterwalder Zürich<br>     <b>Name:</b> Avia Service HB     </div>`)[0];
+                popup_d3731572bfa995f121a94ec806844b55.setContent(html_e1de8936bd26e75de6affe1473a1751d);
+            
+        
+
+        marker_7ad2e2704bfd3a2c22f4f3f53f370a9f.bindPopup(popup_d3731572bfa995f121a94ec806844b55)
+        ;
+
+        
+    
+    
+            marker_7ad2e2704bfd3a2c22f4f3f53f370a9f.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7ad2e2704bfd3a2c22f4f3f53f370a9f.setIcon(icon_8954522e8cb8dddb87af99d05be0ff48);
+            
+    
+            var marker_193f14f60ec473ebaa26d32c1a5851f4 = L.marker(
+                [47.3702456, 8.5125042],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_2eea8eb2b637f219728c09e760c281e3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1c135991fb25c1df51a131002c4ac23a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_2f50d2686cd0268cbe5ff8008fda2539 = $(`<div id="html_2f50d2686cd0268cbe5ff8008fda2539" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> A.H. Meyer & Cie<br>     <b>Name:</b> Avia Birmensdorferstrasse     </div>`)[0];
+                popup_1c135991fb25c1df51a131002c4ac23a.setContent(html_2f50d2686cd0268cbe5ff8008fda2539);
+            
+        
+
+        marker_193f14f60ec473ebaa26d32c1a5851f4.bindPopup(popup_1c135991fb25c1df51a131002c4ac23a)
+        ;
+
+        
+    
+    
+            marker_193f14f60ec473ebaa26d32c1a5851f4.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_193f14f60ec473ebaa26d32c1a5851f4.setIcon(icon_2eea8eb2b637f219728c09e760c281e3);
+            
+    
+            var marker_45e4e7e296a89bd7072a9652db1b77e9 = L.marker(
+                [47.3617439, 8.5181345],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_d3231fbaa5f594c36ec4bcad445e8bb5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6675f15de1a872080d65d0f2c4a8734e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8b0c46fd6bd4809baac8433398bff743 = $(`<div id="html_8b0c46fd6bd4809baac8433398bff743" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Tamoil<br>     <b>Operator:</b> Tamoil<br>     <b>Name:</b> Tamoil     </div>`)[0];
+                popup_6675f15de1a872080d65d0f2c4a8734e.setContent(html_8b0c46fd6bd4809baac8433398bff743);
+            
+        
+
+        marker_45e4e7e296a89bd7072a9652db1b77e9.bindPopup(popup_6675f15de1a872080d65d0f2c4a8734e)
+        ;
+
+        
+    
+    
+            marker_45e4e7e296a89bd7072a9652db1b77e9.bindTooltip(
+                `<div>
+                     Tamoil
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_45e4e7e296a89bd7072a9652db1b77e9.setIcon(icon_d3231fbaa5f594c36ec4bcad445e8bb5);
+            
+    
+            var marker_ee7a615ac5f29f992c6d7c336c838453 = L.marker(
+                [47.4161953, 8.5640414],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_f8633a6eb7a22f221c080d2730f34105 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a48bd7135a9a1f45815ef81718b5049a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_18d10ad28372f3c048f0b472517c4c8a = $(`<div id="html_18d10ad28372f3c048f0b472517c4c8a" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> SOCAR<br>     <b>Operator:</b> SOCAR Energy Switzerland<br>     <b>Name:</b> SOCAR Opfikon     </div>`)[0];
+                popup_a48bd7135a9a1f45815ef81718b5049a.setContent(html_18d10ad28372f3c048f0b472517c4c8a);
+            
+        
+
+        marker_ee7a615ac5f29f992c6d7c336c838453.bindPopup(popup_a48bd7135a9a1f45815ef81718b5049a)
+        ;
+
+        
+    
+    
+            marker_ee7a615ac5f29f992c6d7c336c838453.bindTooltip(
+                `<div>
+                     SOCAR
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ee7a615ac5f29f992c6d7c336c838453.setIcon(icon_f8633a6eb7a22f221c080d2730f34105);
+            
+    
+            var marker_729bb720eb15f24e26eb8796bba94d99 = L.marker(
+                [47.3403588, 8.5193947],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_058a2d818822a7218fa348a4bd8d2d8f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_25a0e0605118f9932dee8668cff49267 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_db02fc0949bfb17711afb2be7a51bb9f = $(`<div id="html_db02fc0949bfb17711afb2be7a51bb9f" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Socar<br>     <b>Operator:</b> SOCAR Energy Switzerland<br>     <b>Name:</b> SOCAR Manegg     </div>`)[0];
+                popup_25a0e0605118f9932dee8668cff49267.setContent(html_db02fc0949bfb17711afb2be7a51bb9f);
+            
+        
+
+        marker_729bb720eb15f24e26eb8796bba94d99.bindPopup(popup_25a0e0605118f9932dee8668cff49267)
+        ;
+
+        
+    
+    
+            marker_729bb720eb15f24e26eb8796bba94d99.bindTooltip(
+                `<div>
+                     Socar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_729bb720eb15f24e26eb8796bba94d99.setIcon(icon_058a2d818822a7218fa348a4bd8d2d8f);
+            
+    
+            var marker_cb018605a7120a7bbf03b9d70754ea76 = L.marker(
+                [47.4184706, 8.5468061],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_40a6f4f33cf72be262dee32a41c6d0b9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6adf25205c2e2a6ed1899c3799917a72 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_76b64d30ae48c4e281a389e7d240b698 = $(`<div id="html_76b64d30ae48c4e281a389e7d240b698" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Independent<br>     <b>Operator:</b> nan<br>     <b>Name:</b> nan     </div>`)[0];
+                popup_6adf25205c2e2a6ed1899c3799917a72.setContent(html_76b64d30ae48c4e281a389e7d240b698);
+            
+        
+
+        marker_cb018605a7120a7bbf03b9d70754ea76.bindPopup(popup_6adf25205c2e2a6ed1899c3799917a72)
+        ;
+
+        
+    
+    
+            marker_cb018605a7120a7bbf03b9d70754ea76.bindTooltip(
+                `<div>
+                     Independent
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cb018605a7120a7bbf03b9d70754ea76.setIcon(icon_40a6f4f33cf72be262dee32a41c6d0b9);
+            
+    
+            var marker_d1916c93d2a96d580aed64fd51be41e7 = L.marker(
+                [47.3857365, 8.4936574],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_cc451d17b4463f989e747aaffe70fff9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dab77945ab4642204a401e449941438a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8ba22f4c0ee50346f68fe617a9bcab88 = $(`<div id="html_8ba22f4c0ee50346f68fe617a9bcab88" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> BP<br>     <b>Operator:</b> nan<br>     <b>Name:</b> BP Emil Frey Altstetten     </div>`)[0];
+                popup_dab77945ab4642204a401e449941438a.setContent(html_8ba22f4c0ee50346f68fe617a9bcab88);
+            
+        
+
+        marker_d1916c93d2a96d580aed64fd51be41e7.bindPopup(popup_dab77945ab4642204a401e449941438a)
+        ;
+
+        
+    
+    
+            marker_d1916c93d2a96d580aed64fd51be41e7.bindTooltip(
+                `<div>
+                     BP
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d1916c93d2a96d580aed64fd51be41e7.setIcon(icon_cc451d17b4463f989e747aaffe70fff9);
+            
+    
+            var marker_05481211d01714aa413bf8918384b705 = L.marker(
+                [47.4049521, 8.5497781],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_75e6b462345dc13bb49e47e8cff24dba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6cb3af982088956a4439788532fb5f9a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_cd7a8ef7e4cb4888d5b6ff472c10b5d8 = $(`<div id="html_cd7a8ef7e4cb4888d5b6ff472c10b5d8" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> Avia Osterwalder Zürich<br>     <b>Name:</b> Avia Dörflistrasse     </div>`)[0];
+                popup_6cb3af982088956a4439788532fb5f9a.setContent(html_cd7a8ef7e4cb4888d5b6ff472c10b5d8);
+            
+        
+
+        marker_05481211d01714aa413bf8918384b705.bindPopup(popup_6cb3af982088956a4439788532fb5f9a)
+        ;
+
+        
+    
+    
+            marker_05481211d01714aa413bf8918384b705.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_05481211d01714aa413bf8918384b705.setIcon(icon_75e6b462345dc13bb49e47e8cff24dba);
+            
+    
+            var marker_bbe7b7a5a4a12011bda6cfaca374e7e2 = L.marker(
+                [47.4133069, 8.5208931],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_81d37ef2265707346129c96f160b52ee = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db8ab07699626930333524d9366bdd22 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0c61e0b8d80e8e31f24fa1546a852bf7 = $(`<div id="html_0c61e0b8d80e8e31f24fa1546a852bf7" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Coop<br>     <b>Operator:</b> Coop Mineraloel<br>     <b>Name:</b> nan     </div>`)[0];
+                popup_db8ab07699626930333524d9366bdd22.setContent(html_0c61e0b8d80e8e31f24fa1546a852bf7);
+            
+        
+
+        marker_bbe7b7a5a4a12011bda6cfaca374e7e2.bindPopup(popup_db8ab07699626930333524d9366bdd22)
+        ;
+
+        
+    
+    
+            marker_bbe7b7a5a4a12011bda6cfaca374e7e2.bindTooltip(
+                `<div>
+                     Coop
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bbe7b7a5a4a12011bda6cfaca374e7e2.setIcon(icon_81d37ef2265707346129c96f160b52ee);
+            
+    
+            var marker_71c2200b57b746502e84f217dacd92e6 = L.marker(
+                [47.4123963, 8.5239096],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_0e10342c5ad109c3c3b741dbd63021fc = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_06a651953d10afe88bb687b84ad353bd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_183453a66f23ed495711158faaff7cf9 = $(`<div id="html_183453a66f23ed495711158faaff7cf9" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Independent<br>     <b>Operator:</b> Wehntaler Autoservice<br>     <b>Name:</b> Wehntaler Tankstelle     </div>`)[0];
+                popup_06a651953d10afe88bb687b84ad353bd.setContent(html_183453a66f23ed495711158faaff7cf9);
+            
+        
+
+        marker_71c2200b57b746502e84f217dacd92e6.bindPopup(popup_06a651953d10afe88bb687b84ad353bd)
+        ;
+
+        
+    
+    
+            marker_71c2200b57b746502e84f217dacd92e6.bindTooltip(
+                `<div>
+                     Independent
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_71c2200b57b746502e84f217dacd92e6.setIcon(icon_0e10342c5ad109c3c3b741dbd63021fc);
+            
+    
+            var marker_95bb8287908d15e1f741daf12f03606f = L.marker(
+                [47.4113884, 8.5268978],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_a88328e171c891ef2d3235e7c55deef4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_9d35cd835d2d529283a1ec05db685265 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1bb9ce83ae7e7b036b8b2bd217bf5726 = $(`<div id="html_1bb9ce83ae7e7b036b8b2bd217bf5726" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> A.H. Meyer & Cie<br>     <b>Name:</b> Avia Regensberg     </div>`)[0];
+                popup_9d35cd835d2d529283a1ec05db685265.setContent(html_1bb9ce83ae7e7b036b8b2bd217bf5726);
+            
+        
+
+        marker_95bb8287908d15e1f741daf12f03606f.bindPopup(popup_9d35cd835d2d529283a1ec05db685265)
+        ;
+
+        
+    
+    
+            marker_95bb8287908d15e1f741daf12f03606f.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_95bb8287908d15e1f741daf12f03606f.setIcon(icon_a88328e171c891ef2d3235e7c55deef4);
+            
+    
+            var marker_febbdc9cfb97e837f2461c4ccc923b9b = L.marker(
+                [47.404558, 8.5563801],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_01a3a1f207ad22fef56d8c6797fa269e = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_db4538073357729caa9a025d13cb7692 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1815cfb11a347a8d8677c67ac1b306f2 = $(`<div id="html_1815cfb11a347a8d8677c67ac1b306f2" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Ruedi Rüssel<br>     <b>Operator:</b> Semes Automobile<br>     <b>Name:</b> Ruedi Rüssel     </div>`)[0];
+                popup_db4538073357729caa9a025d13cb7692.setContent(html_1815cfb11a347a8d8677c67ac1b306f2);
+            
+        
+
+        marker_febbdc9cfb97e837f2461c4ccc923b9b.bindPopup(popup_db4538073357729caa9a025d13cb7692)
+        ;
+
+        
+    
+    
+            marker_febbdc9cfb97e837f2461c4ccc923b9b.bindTooltip(
+                `<div>
+                     Ruedi Rüssel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_febbdc9cfb97e837f2461c4ccc923b9b.setIcon(icon_01a3a1f207ad22fef56d8c6797fa269e);
+            
+    
+            var marker_5acc96337fecaffe4bc61f584978e72b = L.marker(
+                [47.4071384, 8.5473271],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_b5939c7e4051a981644abde44f222c03 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d15f5e6c48439a84ef0f0b913623ee02 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b7c8e87d8f490344eb34418d15a38624 = $(`<div id="html_b7c8e87d8f490344eb34418d15a38624" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Independent<br>     <b>Operator:</b> nan<br>     <b>Name:</b> Discount-Tankstelle     </div>`)[0];
+                popup_d15f5e6c48439a84ef0f0b913623ee02.setContent(html_b7c8e87d8f490344eb34418d15a38624);
+            
+        
+
+        marker_5acc96337fecaffe4bc61f584978e72b.bindPopup(popup_d15f5e6c48439a84ef0f0b913623ee02)
+        ;
+
+        
+    
+    
+            marker_5acc96337fecaffe4bc61f584978e72b.bindTooltip(
+                `<div>
+                     Independent
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5acc96337fecaffe4bc61f584978e72b.setIcon(icon_b5939c7e4051a981644abde44f222c03);
+            
+    
+            var marker_5585512a3c3dee58139099482b360f87 = L.marker(
+                [47.3678087, 8.564167],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_c555d92ab4c2625377947964301194ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0643539377c9e07226075f32bfb2b50b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_61c37664a783a3357c9e83fdd4eb7ee8 = $(`<div id="html_61c37664a783a3357c9e83fdd4eb7ee8" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Shell<br>     <b>Operator:</b> nan<br>     <b>Name:</b> Shell Bergstrasse (Automat)     </div>`)[0];
+                popup_0643539377c9e07226075f32bfb2b50b.setContent(html_61c37664a783a3357c9e83fdd4eb7ee8);
+            
+        
+
+        marker_5585512a3c3dee58139099482b360f87.bindPopup(popup_0643539377c9e07226075f32bfb2b50b)
+        ;
+
+        
+    
+    
+            marker_5585512a3c3dee58139099482b360f87.bindTooltip(
+                `<div>
+                     Shell
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5585512a3c3dee58139099482b360f87.setIcon(icon_c555d92ab4c2625377947964301194ab);
+            
+    
+            var marker_373811fd81705aa639f73798763c7096 = L.marker(
+                [47.367931, 8.5644227],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_302bcb73a23278f9d92b335670a0e86a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0c026586736050c726a92873a5140bfa = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1f66eebedcb1abfeebdb1b69aae9c8e7 = $(`<div id="html_1f66eebedcb1abfeebdb1b69aae9c8e7" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Shell<br>     <b>Operator:</b> nan<br>     <b>Name:</b> Shell Bergstrasse (Shop)     </div>`)[0];
+                popup_0c026586736050c726a92873a5140bfa.setContent(html_1f66eebedcb1abfeebdb1b69aae9c8e7);
+            
+        
+
+        marker_373811fd81705aa639f73798763c7096.bindPopup(popup_0c026586736050c726a92873a5140bfa)
+        ;
+
+        
+    
+    
+            marker_373811fd81705aa639f73798763c7096.bindTooltip(
+                `<div>
+                     Shell
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_373811fd81705aa639f73798763c7096.setIcon(icon_302bcb73a23278f9d92b335670a0e86a);
+            
+    
+            var marker_93ddab07f889107ba49b43c64deabf9d = L.marker(
+                [47.3625248, 8.5480473],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_60149bbfb62a2a1444658cf23fb4a758 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_85475273596ebf8a8fb3d7e9d8adb560 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_31297c2b148046dc65a9851bac094fd0 = $(`<div id="html_31297c2b148046dc65a9851bac094fd0" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Migrol<br>     <b>Operator:</b> Migrol<br>     <b>Name:</b> Migrol Tankstelle AMAG Utoquai     </div>`)[0];
+                popup_85475273596ebf8a8fb3d7e9d8adb560.setContent(html_31297c2b148046dc65a9851bac094fd0);
+            
+        
+
+        marker_93ddab07f889107ba49b43c64deabf9d.bindPopup(popup_85475273596ebf8a8fb3d7e9d8adb560)
+        ;
+
+        
+    
+    
+            marker_93ddab07f889107ba49b43c64deabf9d.bindTooltip(
+                `<div>
+                     Migrol
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_93ddab07f889107ba49b43c64deabf9d.setIcon(icon_60149bbfb62a2a1444658cf23fb4a758);
+            
+    
+            var marker_fd45b5e3a019d3e8e5977da6a133e6d1 = L.marker(
+                [47.3624756, 8.5681877],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_28aea03fdf02185d2b208306f26c1216 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4c491429d5368346503ca6b3855b0ef7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_62ef693d389e81f6304d20fc3afe4cf2 = $(`<div id="html_62ef693d389e81f6304d20fc3afe4cf2" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> BP<br>     <b>Operator:</b> nan<br>     <b>Name:</b> BP Witikonerstrasse     </div>`)[0];
+                popup_4c491429d5368346503ca6b3855b0ef7.setContent(html_62ef693d389e81f6304d20fc3afe4cf2);
+            
+        
+
+        marker_fd45b5e3a019d3e8e5977da6a133e6d1.bindPopup(popup_4c491429d5368346503ca6b3855b0ef7)
+        ;
+
+        
+    
+    
+            marker_fd45b5e3a019d3e8e5977da6a133e6d1.bindTooltip(
+                `<div>
+                     BP
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fd45b5e3a019d3e8e5977da6a133e6d1.setIcon(icon_28aea03fdf02185d2b208306f26c1216);
+            
+    
+            var marker_be08a38830ac1e4a021ba0bdb4308d1a = L.marker(
+                [47.3943519, 8.5297022],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_4ea296c43475ad07a5286dc16a2d7fe3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_71544abe3cf7d94c5d01d77fb57436fb = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_08e232662c2d074fb231d5fe20f19487 = $(`<div id="html_08e232662c2d074fb231d5fe20f19487" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Migrol<br>     <b>Operator:</b> Migrol<br>     <b>Name:</b> Migrol Tankstelle Wipkingen     </div>`)[0];
+                popup_71544abe3cf7d94c5d01d77fb57436fb.setContent(html_08e232662c2d074fb231d5fe20f19487);
+            
+        
+
+        marker_be08a38830ac1e4a021ba0bdb4308d1a.bindPopup(popup_71544abe3cf7d94c5d01d77fb57436fb)
+        ;
+
+        
+    
+    
+            marker_be08a38830ac1e4a021ba0bdb4308d1a.bindTooltip(
+                `<div>
+                     Migrol
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_be08a38830ac1e4a021ba0bdb4308d1a.setIcon(icon_4ea296c43475ad07a5286dc16a2d7fe3);
+            
+    
+            var marker_89d0fc3aec55d25ffd2455bd7fda6770 = L.marker(
+                [47.4063348, 8.5836156],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_db60385ec51559f4b4f6ad007ecb32ce = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8949fef9685cb5a6dfd50800478231e6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_dee4ea20a3a8778bb4e7735c0662e0f1 = $(`<div id="html_dee4ea20a3a8778bb4e7735c0662e0f1" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Migrol<br>     <b>Operator:</b> Migrol<br>     <b>Name:</b> Migrol Service Schwamendingen     </div>`)[0];
+                popup_8949fef9685cb5a6dfd50800478231e6.setContent(html_dee4ea20a3a8778bb4e7735c0662e0f1);
+            
+        
+
+        marker_89d0fc3aec55d25ffd2455bd7fda6770.bindPopup(popup_8949fef9685cb5a6dfd50800478231e6)
+        ;
+
+        
+    
+    
+            marker_89d0fc3aec55d25ffd2455bd7fda6770.bindTooltip(
+                `<div>
+                     Migrol
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_89d0fc3aec55d25ffd2455bd7fda6770.setIcon(icon_db60385ec51559f4b4f6ad007ecb32ce);
+            
+    
+            var marker_a892f6afa0c9bec183967425015697ae = L.marker(
+                [47.4073726, 8.5865182],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_c54f16bef1ee61795a3de52b2a429ed4 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_946784cda5ad0a8aef7ada25d1a9dcc3 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b09cb41ac029480c53ca788c3193a591 = $(`<div id="html_b09cb41ac029480c53ca788c3193a591" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> Avia Osterwalder Zürich<br>     <b>Name:</b> Avia Ueberlandstrasse     </div>`)[0];
+                popup_946784cda5ad0a8aef7ada25d1a9dcc3.setContent(html_b09cb41ac029480c53ca788c3193a591);
+            
+        
+
+        marker_a892f6afa0c9bec183967425015697ae.bindPopup(popup_946784cda5ad0a8aef7ada25d1a9dcc3)
+        ;
+
+        
+    
+    
+            marker_a892f6afa0c9bec183967425015697ae.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_a892f6afa0c9bec183967425015697ae.setIcon(icon_c54f16bef1ee61795a3de52b2a429ed4);
+            
+    
+            var marker_645a29100f52d611483fc646ad7a0ee2 = L.marker(
+                [47.4062266, 8.5831505],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_d1cb28896ce823c736faeaa5a68e6af9 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_a33f6edd4ee3793a6ede6376db3b093f = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_09898e3369fdb02b863ff519cb6b8807 = $(`<div id="html_09898e3369fdb02b863ff519cb6b8807" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Migrol<br>     <b>Operator:</b> Migrol<br>     <b>Name:</b> Migrol Tankstelle Schwamendingen     </div>`)[0];
+                popup_a33f6edd4ee3793a6ede6376db3b093f.setContent(html_09898e3369fdb02b863ff519cb6b8807);
+            
+        
+
+        marker_645a29100f52d611483fc646ad7a0ee2.bindPopup(popup_a33f6edd4ee3793a6ede6376db3b093f)
+        ;
+
+        
+    
+    
+            marker_645a29100f52d611483fc646ad7a0ee2.bindTooltip(
+                `<div>
+                     Migrol
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_645a29100f52d611483fc646ad7a0ee2.setIcon(icon_d1cb28896ce823c736faeaa5a68e6af9);
+            
+    
+            var marker_4a07cc824b53d3d133b68c4d2230e024 = L.marker(
+                [47.402714, 8.577361],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_260246b70f9133fb5e9e625fdc872e8b = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_8185d46e5e09436b0ef96707db1d36f6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c5f21e9578c9055e9e2b6291daa93f87 = $(`<div id="html_c5f21e9578c9055e9e2b6291daa93f87" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Tamoil<br>     <b>Operator:</b> nan<br>     <b>Name:</b> Tamoil     </div>`)[0];
+                popup_8185d46e5e09436b0ef96707db1d36f6.setContent(html_c5f21e9578c9055e9e2b6291daa93f87);
+            
+        
+
+        marker_4a07cc824b53d3d133b68c4d2230e024.bindPopup(popup_8185d46e5e09436b0ef96707db1d36f6)
+        ;
+
+        
+    
+    
+            marker_4a07cc824b53d3d133b68c4d2230e024.bindTooltip(
+                `<div>
+                     Tamoil
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_4a07cc824b53d3d133b68c4d2230e024.setIcon(icon_260246b70f9133fb5e9e625fdc872e8b);
+            
+    
+            var marker_fcd7b01f7f9483ee6fe44b522c1486d9 = L.marker(
+                [47.361231, 8.5224826],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_8ac7431d2f22d28044599c281af0fd04 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1cec846104c8154193e910aef708a642 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_9deb0c44f5038419a376911d06e03acb = $(`<div id="html_9deb0c44f5038419a376911d06e03acb" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Eni<br>     <b>Operator:</b> nan<br>     <b>Name:</b> Eni Manessestrasse     </div>`)[0];
+                popup_1cec846104c8154193e910aef708a642.setContent(html_9deb0c44f5038419a376911d06e03acb);
+            
+        
+
+        marker_fcd7b01f7f9483ee6fe44b522c1486d9.bindPopup(popup_1cec846104c8154193e910aef708a642)
+        ;
+
+        
+    
+    
+            marker_fcd7b01f7f9483ee6fe44b522c1486d9.bindTooltip(
+                `<div>
+                     Eni
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fcd7b01f7f9483ee6fe44b522c1486d9.setIcon(icon_8ac7431d2f22d28044599c281af0fd04);
+            
+    
+            var marker_898d53e0b9a5e7e23ba34c0e5fb80c47 = L.marker(
+                [47.391139, 8.5267589],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_05cdecefd5b471a31cdd787223d1fe98 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_b0d6ba63d4a9817df3030c3772c3b7c7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3c88b8017c77035cc7ed3fa90f0748a4 = $(`<div id="html_3c88b8017c77035cc7ed3fa90f0748a4" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Independent<br>     <b>Operator:</b> nan<br>     <b>Name:</b> Discount-Tankstelle     </div>`)[0];
+                popup_b0d6ba63d4a9817df3030c3772c3b7c7.setContent(html_3c88b8017c77035cc7ed3fa90f0748a4);
+            
+        
+
+        marker_898d53e0b9a5e7e23ba34c0e5fb80c47.bindPopup(popup_b0d6ba63d4a9817df3030c3772c3b7c7)
+        ;
+
+        
+    
+    
+            marker_898d53e0b9a5e7e23ba34c0e5fb80c47.bindTooltip(
+                `<div>
+                     Independent
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_898d53e0b9a5e7e23ba34c0e5fb80c47.setIcon(icon_05cdecefd5b471a31cdd787223d1fe98);
+            
+    
+            var marker_be3c5b4729c700610121e9d597f9e31c = L.marker(
+                [47.4039392, 8.56718],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_911e6abe02cf1f8de8956847e2917c90 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_2d4899ec14c0b74d3798a222a2106e1e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a43389b2c9675156352c72e58cfa6023 = $(`<div id="html_a43389b2c9675156352c72e58cfa6023" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Ruedi Rüssel<br>     <b>Operator:</b> nan<br>     <b>Name:</b> Ruedi Rüssel     </div>`)[0];
+                popup_2d4899ec14c0b74d3798a222a2106e1e.setContent(html_a43389b2c9675156352c72e58cfa6023);
+            
+        
+
+        marker_be3c5b4729c700610121e9d597f9e31c.bindPopup(popup_2d4899ec14c0b74d3798a222a2106e1e)
+        ;
+
+        
+    
+    
+            marker_be3c5b4729c700610121e9d597f9e31c.bindTooltip(
+                `<div>
+                     Ruedi Rüssel
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_be3c5b4729c700610121e9d597f9e31c.setIcon(icon_911e6abe02cf1f8de8956847e2917c90);
+            
+    
+            var marker_7658000ed3e2e8a255f3ed5a0fdd0eb7 = L.marker(
+                [47.3684503, 8.4967351],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_1c0031fe6ec38dfce8f025845b957218 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ed36f16857204e35d61ec09b4230b084 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b079b81673287ef5151bc416b32d9d1c = $(`<div id="html_b079b81673287ef5151bc416b32d9d1c" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> SOCAR<br>     <b>Operator:</b> SOCAR Energy Switzerland<br>     <b>Name:</b> SOCAR Triemli     </div>`)[0];
+                popup_ed36f16857204e35d61ec09b4230b084.setContent(html_b079b81673287ef5151bc416b32d9d1c);
+            
+        
+
+        marker_7658000ed3e2e8a255f3ed5a0fdd0eb7.bindPopup(popup_ed36f16857204e35d61ec09b4230b084)
+        ;
+
+        
+    
+    
+            marker_7658000ed3e2e8a255f3ed5a0fdd0eb7.bindTooltip(
+                `<div>
+                     SOCAR
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_7658000ed3e2e8a255f3ed5a0fdd0eb7.setIcon(icon_1c0031fe6ec38dfce8f025845b957218);
+            
+    
+            var marker_307cc85344d39dbeccd4ddade136d4a2 = L.marker(
+                [47.3881064, 8.5245108],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_7ae9b61d8030d44605de7f7b5464d71f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1243ee1f6cbf3cafe680cb899309acbe = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a2ec5b59a12a319deb85dc854b554a5b = $(`<div id="html_a2ec5b59a12a319deb85dc854b554a5b" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> nan<br>     <b>Operator:</b> Rigoni & Co<br>     <b>Name:</b> Rigoni & Co     </div>`)[0];
+                popup_1243ee1f6cbf3cafe680cb899309acbe.setContent(html_a2ec5b59a12a319deb85dc854b554a5b);
+            
+        
+
+        marker_307cc85344d39dbeccd4ddade136d4a2.bindPopup(popup_1243ee1f6cbf3cafe680cb899309acbe)
+        ;
+
+        
+    
+    
+            marker_307cc85344d39dbeccd4ddade136d4a2.bindTooltip(
+                `<div>
+                     nan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_307cc85344d39dbeccd4ddade136d4a2.setIcon(icon_7ae9b61d8030d44605de7f7b5464d71f);
+            
+    
+            var marker_0ea626aa6966cc0866f17c1f290173ff = L.marker(
+                [47.39498, 8.4870209],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_f9588c3f141b1497a173b5308c84a13a = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_eefa49f5385941cfdc76feafb0b9ea2e = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_11ec9cb3bc007ed775df57730c3480f7 = $(`<div id="html_11ec9cb3bc007ed775df57730c3480f7" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> A.H. Meyer & Cie<br>     <b>Name:</b> Avia Bernerstrasse Nord     </div>`)[0];
+                popup_eefa49f5385941cfdc76feafb0b9ea2e.setContent(html_11ec9cb3bc007ed775df57730c3480f7);
+            
+        
+
+        marker_0ea626aa6966cc0866f17c1f290173ff.bindPopup(popup_eefa49f5385941cfdc76feafb0b9ea2e)
+        ;
+
+        
+    
+    
+            marker_0ea626aa6966cc0866f17c1f290173ff.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_0ea626aa6966cc0866f17c1f290173ff.setIcon(icon_f9588c3f141b1497a173b5308c84a13a);
+            
+    
+            var marker_3fd3bc42b5f41c3a3b07baac80c33a30 = L.marker(
+                [47.3560414, 8.5536233],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_c07e11e3997d7b16a43858b7112c1f64 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f054f977aa96f23ecff2367cfaa73dc6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e75a36c4c3ca91033672cb751ea56bfd = $(`<div id="html_e75a36c4c3ca91033672cb751ea56bfd" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> Avia Osterwalder Zürich<br>     <b>Name:</b> Avia Dufourstrasse     </div>`)[0];
+                popup_f054f977aa96f23ecff2367cfaa73dc6.setContent(html_e75a36c4c3ca91033672cb751ea56bfd);
+            
+        
+
+        marker_3fd3bc42b5f41c3a3b07baac80c33a30.bindPopup(popup_f054f977aa96f23ecff2367cfaa73dc6)
+        ;
+
+        
+    
+    
+            marker_3fd3bc42b5f41c3a3b07baac80c33a30.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3fd3bc42b5f41c3a3b07baac80c33a30.setIcon(icon_c07e11e3997d7b16a43858b7112c1f64);
+            
+    
+            var marker_27871f154cb40d4ed94e56407ef94e8c = L.marker(
+                [47.3583523, 8.5872489],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_54049de3121e83ade4d0764f152beb5f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1d1593197b2b00cdd4de0a138d79e881 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_7b4ea5096024eff9fca6357b0c22e763 = $(`<div id="html_7b4ea5096024eff9fca6357b0c22e763" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Independent<br>     <b>Operator:</b> nan<br>     <b>Name:</b> nan     </div>`)[0];
+                popup_1d1593197b2b00cdd4de0a138d79e881.setContent(html_7b4ea5096024eff9fca6357b0c22e763);
+            
+        
+
+        marker_27871f154cb40d4ed94e56407ef94e8c.bindPopup(popup_1d1593197b2b00cdd4de0a138d79e881)
+        ;
+
+        
+    
+    
+            marker_27871f154cb40d4ed94e56407ef94e8c.bindTooltip(
+                `<div>
+                     Independent
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_27871f154cb40d4ed94e56407ef94e8c.setIcon(icon_54049de3121e83ade4d0764f152beb5f);
+            
+    
+            var marker_91878d47de4463b0a669050f3fbd8b1c = L.marker(
+                [47.4067224, 8.5382677],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_8e8fa89f95c54b551200edb740d2801c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_4ef25064ebcf2f9cebfa01e05534720d = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fc223f29c5fcc7ac422ce2d3ba065532 = $(`<div id="html_fc223f29c5fcc7ac422ce2d3ba065532" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> BP<br>     <b>Operator:</b> nan<br>     <b>Name:</b> BP Allenmoos     </div>`)[0];
+                popup_4ef25064ebcf2f9cebfa01e05534720d.setContent(html_fc223f29c5fcc7ac422ce2d3ba065532);
+            
+        
+
+        marker_91878d47de4463b0a669050f3fbd8b1c.bindPopup(popup_4ef25064ebcf2f9cebfa01e05534720d)
+        ;
+
+        
+    
+    
+            marker_91878d47de4463b0a669050f3fbd8b1c.bindTooltip(
+                `<div>
+                     BP
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_91878d47de4463b0a669050f3fbd8b1c.setIcon(icon_8e8fa89f95c54b551200edb740d2801c);
+            
+    
+            var marker_5ae83bb3efde6458e914487eca087a3b = L.marker(
+                [47.375256, 8.490236],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_975605a070e2e4e0ee1db669ed2cd811 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1273e012c3806709ac83f7c1ceecb2b7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_fb7355cf20bd97c5c30a0832760f678e = $(`<div id="html_fb7355cf20bd97c5c30a0832760f678e" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> A.H. Meyer & Cie<br>     <b>Name:</b> Garage Resegatti     </div>`)[0];
+                popup_1273e012c3806709ac83f7c1ceecb2b7.setContent(html_fb7355cf20bd97c5c30a0832760f678e);
+            
+        
+
+        marker_5ae83bb3efde6458e914487eca087a3b.bindPopup(popup_1273e012c3806709ac83f7c1ceecb2b7)
+        ;
+
+        
+    
+    
+            marker_5ae83bb3efde6458e914487eca087a3b.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_5ae83bb3efde6458e914487eca087a3b.setIcon(icon_975605a070e2e4e0ee1db669ed2cd811);
+            
+    
+            var marker_be288fcb1de4a35c3a7da831b9473992 = L.marker(
+                [47.4151254, 8.5183109],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_03be689dd67723d9f953b2cc86e91b54 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fee3cffe8b134e699aad6ef4efc52149 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e812d1cdff4e41c8419c6a81945f434b = $(`<div id="html_e812d1cdff4e41c8419c6a81945f434b" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> OIL!<br>     <b>Operator:</b> Hürstwald Garage<br>     <b>Name:</b> nan     </div>`)[0];
+                popup_fee3cffe8b134e699aad6ef4efc52149.setContent(html_e812d1cdff4e41c8419c6a81945f434b);
+            
+        
+
+        marker_be288fcb1de4a35c3a7da831b9473992.bindPopup(popup_fee3cffe8b134e699aad6ef4efc52149)
+        ;
+
+        
+    
+    
+            marker_be288fcb1de4a35c3a7da831b9473992.bindTooltip(
+                `<div>
+                     OIL!
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_be288fcb1de4a35c3a7da831b9473992.setIcon(icon_03be689dd67723d9f953b2cc86e91b54);
+            
+    
+            var marker_839932cd188f0de575e708d94809a5cd = L.marker(
+                [47.3360236, 8.5179148],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_c259009463eb3bc45107b3240dfa4633 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f57fe14f75dfbf8bfa04465919809ba4 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c7d4682139b96cb1bef01b13124da244 = $(`<div id="html_c7d4682139b96cb1bef01b13124da244" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> Avia Osterwalder Zürich<br>     <b>Name:</b> Allmend Automobile     </div>`)[0];
+                popup_f57fe14f75dfbf8bfa04465919809ba4.setContent(html_c7d4682139b96cb1bef01b13124da244);
+            
+        
+
+        marker_839932cd188f0de575e708d94809a5cd.bindPopup(popup_f57fe14f75dfbf8bfa04465919809ba4)
+        ;
+
+        
+    
+    
+            marker_839932cd188f0de575e708d94809a5cd.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_839932cd188f0de575e708d94809a5cd.setIcon(icon_c259009463eb3bc45107b3240dfa4633);
+            
+    
+            var marker_67f75725968f4841caac6a72d091e121 = L.marker(
+                [47.37199, 8.5357876],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_5aed0bda2c1799f204dced79f24319e2 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7fe8c4bccbd72b8f3179c4d75d52d6c7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_ae03f9f32b3eb729317fd4b3bf640eb0 = $(`<div id="html_ae03f9f32b3eb729317fd4b3bf640eb0" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> nan<br>     <b>Operator:</b> nan<br>     <b>Name:</b> nan     </div>`)[0];
+                popup_7fe8c4bccbd72b8f3179c4d75d52d6c7.setContent(html_ae03f9f32b3eb729317fd4b3bf640eb0);
+            
+        
+
+        marker_67f75725968f4841caac6a72d091e121.bindPopup(popup_7fe8c4bccbd72b8f3179c4d75d52d6c7)
+        ;
+
+        
+    
+    
+            marker_67f75725968f4841caac6a72d091e121.bindTooltip(
+                `<div>
+                     nan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_67f75725968f4841caac6a72d091e121.setIcon(icon_5aed0bda2c1799f204dced79f24319e2);
+            
+    
+            var marker_d67b1e68543dfc0f1576303b91235a1f = L.marker(
+                [47.4171988, 8.5405286],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_3714c86e0a5fa5f3a2a5019474fdd3ab = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_c92e789b5467510f05b4882c5ad9e008 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0f089033ee6739e28bbc615da970b2f6 = $(`<div id="html_0f089033ee6739e28bbc615da970b2f6" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> Avia Osterwalder Zürich<br>     <b>Name:</b> Osterwalder Zürich     </div>`)[0];
+                popup_c92e789b5467510f05b4882c5ad9e008.setContent(html_0f089033ee6739e28bbc615da970b2f6);
+            
+        
+
+        marker_d67b1e68543dfc0f1576303b91235a1f.bindPopup(popup_c92e789b5467510f05b4882c5ad9e008)
+        ;
+
+        
+    
+    
+            marker_d67b1e68543dfc0f1576303b91235a1f.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d67b1e68543dfc0f1576303b91235a1f.setIcon(icon_3714c86e0a5fa5f3a2a5019474fdd3ab);
+            
+    
+            var marker_3d7ba8e4c2cb7f7887c4bbd1c347cdde = L.marker(
+                [47.3790129, 8.5491137],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_58c44239e489e94e5b6c9d1ded10a3ba = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ca3f64596d8568a3fea1d7741772cede = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4f59705b1b358eef68fb1a96d93a93d8 = $(`<div id="html_4f59705b1b358eef68fb1a96d93a93d8" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> BEBECO<br>     <b>Operator:</b> Schweizer Armee<br>     <b>Name:</b> BEBECO     </div>`)[0];
+                popup_ca3f64596d8568a3fea1d7741772cede.setContent(html_4f59705b1b358eef68fb1a96d93a93d8);
+            
+        
+
+        marker_3d7ba8e4c2cb7f7887c4bbd1c347cdde.bindPopup(popup_ca3f64596d8568a3fea1d7741772cede)
+        ;
+
+        
+    
+    
+            marker_3d7ba8e4c2cb7f7887c4bbd1c347cdde.bindTooltip(
+                `<div>
+                     BEBECO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3d7ba8e4c2cb7f7887c4bbd1c347cdde.setIcon(icon_58c44239e489e94e5b6c9d1ded10a3ba);
+            
+    
+            var marker_bbe9928889188d28ccfc9ba9c8b0508f = L.marker(
+                [47.410457, 8.5121281],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_ea0bd5b159387e79bc2a3b3972eb3242 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_1e117f297b851daac053ced838b92cfd = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0072f364135f58f4b21ca69a6cd54401 = $(`<div id="html_0072f364135f58f4b21ca69a6cd54401" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> BEBECO<br>     <b>Operator:</b> Schweizer Armee<br>     <b>Name:</b> BEBECO     </div>`)[0];
+                popup_1e117f297b851daac053ced838b92cfd.setContent(html_0072f364135f58f4b21ca69a6cd54401);
+            
+        
+
+        marker_bbe9928889188d28ccfc9ba9c8b0508f.bindPopup(popup_1e117f297b851daac053ced838b92cfd)
+        ;
+
+        
+    
+    
+            marker_bbe9928889188d28ccfc9ba9c8b0508f.bindTooltip(
+                `<div>
+                     BEBECO
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bbe9928889188d28ccfc9ba9c8b0508f.setIcon(icon_ea0bd5b159387e79bc2a3b3972eb3242);
+            
+    
+            var marker_54215ac24c58ea2b211d8e81d18a55f2 = L.marker(
+                [47.4138567, 8.5493439],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_2a5f0be4eb2c87e294154797957a4ae0 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_de00fcc1866db0d548eaa12107190b05 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_27f7545ab4546ab5926befa5f9336e32 = $(`<div id="html_27f7545ab4546ab5926befa5f9336e32" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> SOCAR<br>     <b>Operator:</b> nan<br>     <b>Name:</b> SOCAR     </div>`)[0];
+                popup_de00fcc1866db0d548eaa12107190b05.setContent(html_27f7545ab4546ab5926befa5f9336e32);
+            
+        
+
+        marker_54215ac24c58ea2b211d8e81d18a55f2.bindPopup(popup_de00fcc1866db0d548eaa12107190b05)
+        ;
+
+        
+    
+    
+            marker_54215ac24c58ea2b211d8e81d18a55f2.bindTooltip(
+                `<div>
+                     SOCAR
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_54215ac24c58ea2b211d8e81d18a55f2.setIcon(icon_2a5f0be4eb2c87e294154797957a4ae0);
+            
+    
+            var marker_bc6247f3d21662c88c8375a79149dae4 = L.marker(
+                [47.3353262, 8.5408584],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_99feb476f562817a2953633255f1c265 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_dfe459d2ebd9e7ca176b688c9a7958b8 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_24ca6e3bc377fbfb3390dd8b65576651 = $(`<div id="html_24ca6e3bc377fbfb3390dd8b65576651" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Socar<br>     <b>Operator:</b> SOCAR Energy Switzerland<br>     <b>Name:</b> SOCAR Seebucht     </div>`)[0];
+                popup_dfe459d2ebd9e7ca176b688c9a7958b8.setContent(html_24ca6e3bc377fbfb3390dd8b65576651);
+            
+        
+
+        marker_bc6247f3d21662c88c8375a79149dae4.bindPopup(popup_dfe459d2ebd9e7ca176b688c9a7958b8)
+        ;
+
+        
+    
+    
+            marker_bc6247f3d21662c88c8375a79149dae4.bindTooltip(
+                `<div>
+                     Socar
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bc6247f3d21662c88c8375a79149dae4.setIcon(icon_99feb476f562817a2953633255f1c265);
+            
+    
+            var marker_1cf24e03ebf0d6709e73b69c82db8d4a = L.marker(
+                [47.3522069, 8.5585571],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_e903482a1e3ad20b18169f6960f51212 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_0676e79668e8deaaa5cb725763a79691 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_6319bd16b5930ac86607ef88280af3e7 = $(`<div id="html_6319bd16b5930ac86607ef88280af3e7" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Shell<br>     <b>Operator:</b> Shell (Switzerland)<br>     <b>Name:</b> Shell Hornegg     </div>`)[0];
+                popup_0676e79668e8deaaa5cb725763a79691.setContent(html_6319bd16b5930ac86607ef88280af3e7);
+            
+        
+
+        marker_1cf24e03ebf0d6709e73b69c82db8d4a.bindPopup(popup_0676e79668e8deaaa5cb725763a79691)
+        ;
+
+        
+    
+    
+            marker_1cf24e03ebf0d6709e73b69c82db8d4a.bindTooltip(
+                `<div>
+                     Shell
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1cf24e03ebf0d6709e73b69c82db8d4a.setIcon(icon_e903482a1e3ad20b18169f6960f51212);
+            
+    
+            var marker_51832a0bc044a92e18f6a3f1d3c65887 = L.marker(
+                [47.361258, 8.5478749],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_649c2638f887b50ca9d8a44f9825b561 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d8ff0a64d658786c53b2972675ec1e9a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8a27c1bf2f52e70ba5d92a4458035b5c = $(`<div id="html_8a27c1bf2f52e70ba5d92a4458035b5c" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Migrol<br>     <b>Operator:</b> Migrol<br>     <b>Name:</b> Migrol Tankstelle Seefeld     </div>`)[0];
+                popup_d8ff0a64d658786c53b2972675ec1e9a.setContent(html_8a27c1bf2f52e70ba5d92a4458035b5c);
+            
+        
+
+        marker_51832a0bc044a92e18f6a3f1d3c65887.bindPopup(popup_d8ff0a64d658786c53b2972675ec1e9a)
+        ;
+
+        
+    
+    
+            marker_51832a0bc044a92e18f6a3f1d3c65887.bindTooltip(
+                `<div>
+                     Migrol
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_51832a0bc044a92e18f6a3f1d3c65887.setIcon(icon_649c2638f887b50ca9d8a44f9825b561);
+            
+    
+            var marker_d33afef82f68e2272d3ecb494467ad62 = L.marker(
+                [47.3940505, 8.4820011],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_fabd6726ab74535a0ca11eb786386346 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_fb13864e5e2db45f2d072ef3fa51eb8a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_1d524a95442480a5eb1821d11aed63b8 = $(`<div id="html_1d524a95442480a5eb1821d11aed63b8" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> Avia Osterwalder Zürich<br>     <b>Name:</b> J. H. Keller AG     </div>`)[0];
+                popup_fb13864e5e2db45f2d072ef3fa51eb8a.setContent(html_1d524a95442480a5eb1821d11aed63b8);
+            
+        
+
+        marker_d33afef82f68e2272d3ecb494467ad62.bindPopup(popup_fb13864e5e2db45f2d072ef3fa51eb8a)
+        ;
+
+        
+    
+    
+            marker_d33afef82f68e2272d3ecb494467ad62.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d33afef82f68e2272d3ecb494467ad62.setIcon(icon_fabd6726ab74535a0ca11eb786386346);
+            
+    
+            var marker_e66dacce1e227bfe73e81f31d4bfacdb = L.marker(
+                [47.3662195, 8.5336955],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_88cac9898d2bf36f4ca3e94fefd9c282 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_7c4acaa94f5f1d3a8ec40079f979b020 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_5bf16cc0c77f3c6a7e6e55e9e057953a = $(`<div id="html_5bf16cc0c77f3c6a7e6e55e9e057953a" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> A.H. Meyer & Cie<br>     <b>Name:</b> Avia Zur Palme     </div>`)[0];
+                popup_7c4acaa94f5f1d3a8ec40079f979b020.setContent(html_5bf16cc0c77f3c6a7e6e55e9e057953a);
+            
+        
+
+        marker_e66dacce1e227bfe73e81f31d4bfacdb.bindPopup(popup_7c4acaa94f5f1d3a8ec40079f979b020)
+        ;
+
+        
+    
+    
+            marker_e66dacce1e227bfe73e81f31d4bfacdb.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_e66dacce1e227bfe73e81f31d4bfacdb.setIcon(icon_88cac9898d2bf36f4ca3e94fefd9c282);
+            
+    
+            var marker_2172dee173a2c4f08dbd8ae1ec8e4243 = L.marker(
+                [47.3876457, 8.5333362],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_a7df34eaaf054daed3cd74d59ca74aa5 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_df3ed249c7a11d348498e19fdf1fbe95 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_a41d36d0edf92470e8f4f13f54b2ded4 = $(`<div id="html_a41d36d0edf92470e8f4f13f54b2ded4" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> Avia Osterwalder Zürich<br>     <b>Name:</b> Avia Wasserwerkstrasse     </div>`)[0];
+                popup_df3ed249c7a11d348498e19fdf1fbe95.setContent(html_a41d36d0edf92470e8f4f13f54b2ded4);
+            
+        
+
+        marker_2172dee173a2c4f08dbd8ae1ec8e4243.bindPopup(popup_df3ed249c7a11d348498e19fdf1fbe95)
+        ;
+
+        
+    
+    
+            marker_2172dee173a2c4f08dbd8ae1ec8e4243.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2172dee173a2c4f08dbd8ae1ec8e4243.setIcon(icon_a7df34eaaf054daed3cd74d59ca74aa5);
+            
+    
+            var marker_bbc515cea9df5481c670b448504ec4a4 = L.marker(
+                [47.3875329, 8.4986948],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_dbe3f314ae8d36efe6278f330037daad = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_6c86d54e2934c6f4151a2c1b2368eb69 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3c04b4abd94ff9e28a1282406bf38a03 = $(`<div id="html_3c04b4abd94ff9e28a1282406bf38a03" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Coop<br>     <b>Operator:</b> Coop Mineraloel<br>     <b>Name:</b> Coop Tankstelle Letzipark     </div>`)[0];
+                popup_6c86d54e2934c6f4151a2c1b2368eb69.setContent(html_3c04b4abd94ff9e28a1282406bf38a03);
+            
+        
+
+        marker_bbc515cea9df5481c670b448504ec4a4.bindPopup(popup_6c86d54e2934c6f4151a2c1b2368eb69)
+        ;
+
+        
+    
+    
+            marker_bbc515cea9df5481c670b448504ec4a4.bindTooltip(
+                `<div>
+                     Coop
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_bbc515cea9df5481c670b448504ec4a4.setIcon(icon_dbe3f314ae8d36efe6278f330037daad);
+            
+    
+            var marker_61582e320357fa0f7ed5ad097846c1df = L.marker(
+                [47.358531, 8.5319389],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_925c3975a386363ea7b0c5147958189f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_cfccc6e45bf3c6585236d5b4306917e5 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3417420522f2f65c7251e8cc4ea186ce = $(`<div id="html_3417420522f2f65c7251e8cc4ea186ce" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Eni<br>     <b>Operator:</b> nan<br>     <b>Name:</b> Eni Seestrasse     </div>`)[0];
+                popup_cfccc6e45bf3c6585236d5b4306917e5.setContent(html_3417420522f2f65c7251e8cc4ea186ce);
+            
+        
+
+        marker_61582e320357fa0f7ed5ad097846c1df.bindPopup(popup_cfccc6e45bf3c6585236d5b4306917e5)
+        ;
+
+        
+    
+    
+            marker_61582e320357fa0f7ed5ad097846c1df.bindTooltip(
+                `<div>
+                     Eni
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_61582e320357fa0f7ed5ad097846c1df.setIcon(icon_925c3975a386363ea7b0c5147958189f);
+            
+    
+            var marker_2ebb8448d2dd561173f7063aca955379 = L.marker(
+                [47.4109696, 8.5266314],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_4a7a86235dcaa19fa3b4376d809cdc3c = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ab2c38e4363ed78c8914064a321ccba7 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_f2107fcb79fe97ed1ef41173e6fc25f2 = $(`<div id="html_f2107fcb79fe97ed1ef41173e6fc25f2" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> Avia Osterwalder Zürich<br>     <b>Name:</b> Avia     </div>`)[0];
+                popup_ab2c38e4363ed78c8914064a321ccba7.setContent(html_f2107fcb79fe97ed1ef41173e6fc25f2);
+            
+        
+
+        marker_2ebb8448d2dd561173f7063aca955379.bindPopup(popup_ab2c38e4363ed78c8914064a321ccba7)
+        ;
+
+        
+    
+    
+            marker_2ebb8448d2dd561173f7063aca955379.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_2ebb8448d2dd561173f7063aca955379.setIcon(icon_4a7a86235dcaa19fa3b4376d809cdc3c);
+            
+    
+            var marker_ab1a8bae7c24498b76e2dbe3655cf60a = L.marker(
+                [47.3753876, 8.5398134],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_b09efa4e8660fb657e40b44296fa9b80 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_83e5de19095500d128fc87f126da6c30 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_b07508b2f7ec5e6644ebc8038251921d = $(`<div id="html_b07508b2f7ec5e6644ebc8038251921d" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> nan<br>     <b>Operator:</b> Stadt Zürich<br>     <b>Name:</b> nan     </div>`)[0];
+                popup_83e5de19095500d128fc87f126da6c30.setContent(html_b07508b2f7ec5e6644ebc8038251921d);
+            
+        
+
+        marker_ab1a8bae7c24498b76e2dbe3655cf60a.bindPopup(popup_83e5de19095500d128fc87f126da6c30)
+        ;
+
+        
+    
+    
+            marker_ab1a8bae7c24498b76e2dbe3655cf60a.bindTooltip(
+                `<div>
+                     nan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_ab1a8bae7c24498b76e2dbe3655cf60a.setIcon(icon_b09efa4e8660fb657e40b44296fa9b80);
+            
+    
+            var marker_fa8fcbead2620f359649f3f4ca2b6dd7 = L.marker(
+                [47.3891035, 8.5101259],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_443dbe4e801b4a4ca33429af42e0a154 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_bb635c369c5674fe8cdaf46bd6bc148a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_67db216a26afba145895176e5711f229 = $(`<div id="html_67db216a26afba145895176e5711f229" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> nan<br>     <b>Operator:</b> nan<br>     <b>Name:</b> nan     </div>`)[0];
+                popup_bb635c369c5674fe8cdaf46bd6bc148a.setContent(html_67db216a26afba145895176e5711f229);
+            
+        
+
+        marker_fa8fcbead2620f359649f3f4ca2b6dd7.bindPopup(popup_bb635c369c5674fe8cdaf46bd6bc148a)
+        ;
+
+        
+    
+    
+            marker_fa8fcbead2620f359649f3f4ca2b6dd7.bindTooltip(
+                `<div>
+                     nan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_fa8fcbead2620f359649f3f4ca2b6dd7.setIcon(icon_443dbe4e801b4a4ca33429af42e0a154);
+            
+    
+            var marker_70f39d135b696e13adc6e7ec1b341022 = L.marker(
+                [47.3384962, 8.5404282],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_ffb8b41ab093945be2b80a090f8d62de = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_ec0a20cd0c2a8ac0cfa8305b99928d8c = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_8a197e77dc2b000ce7f1315590266eb2 = $(`<div id="html_8a197e77dc2b000ce7f1315590266eb2" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> nan<br>     <b>Operator:</b> nan<br>     <b>Name:</b> Hafen Wollishofen     </div>`)[0];
+                popup_ec0a20cd0c2a8ac0cfa8305b99928d8c.setContent(html_8a197e77dc2b000ce7f1315590266eb2);
+            
+        
+
+        marker_70f39d135b696e13adc6e7ec1b341022.bindPopup(popup_ec0a20cd0c2a8ac0cfa8305b99928d8c)
+        ;
+
+        
+    
+    
+            marker_70f39d135b696e13adc6e7ec1b341022.bindTooltip(
+                `<div>
+                     nan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_70f39d135b696e13adc6e7ec1b341022.setIcon(icon_ffb8b41ab093945be2b80a090f8d62de);
+            
+    
+            var marker_79c682ab7148f579b527a592d51423e6 = L.marker(
+                [47.3822548, 8.5224674],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_718eae7cebe4e8d6802f48d9ba807606 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e5f96b490aa291fdf167d3d1bed99fc6 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_71272f070c4be04913f8464dd8521f83 = $(`<div id="html_71272f070c4be04913f8464dd8521f83" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> nan<br>     <b>Operator:</b> SBB<br>     <b>Name:</b> nan     </div>`)[0];
+                popup_e5f96b490aa291fdf167d3d1bed99fc6.setContent(html_71272f070c4be04913f8464dd8521f83);
+            
+        
+
+        marker_79c682ab7148f579b527a592d51423e6.bindPopup(popup_e5f96b490aa291fdf167d3d1bed99fc6)
+        ;
+
+        
+    
+    
+            marker_79c682ab7148f579b527a592d51423e6.bindTooltip(
+                `<div>
+                     nan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_79c682ab7148f579b527a592d51423e6.setIcon(icon_718eae7cebe4e8d6802f48d9ba807606);
+            
+    
+            var marker_14ab1615a0241047bc6e7ed77688895f = L.marker(
+                [47.3928416, 8.4929085],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_568a90815a2c6ae21d758473e0ecf099 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_02e850c60e5b846926d8a08d74c2861a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_4a3cb3775aa366b71a8ee1776361a0b9 = $(`<div id="html_4a3cb3775aa366b71a8ee1776361a0b9" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> nan<br>     <b>Operator:</b> energie360°<br>     <b>Name:</b> nan     </div>`)[0];
+                popup_02e850c60e5b846926d8a08d74c2861a.setContent(html_4a3cb3775aa366b71a8ee1776361a0b9);
+            
+        
+
+        marker_14ab1615a0241047bc6e7ed77688895f.bindPopup(popup_02e850c60e5b846926d8a08d74c2861a)
+        ;
+
+        
+    
+    
+            marker_14ab1615a0241047bc6e7ed77688895f.bindTooltip(
+                `<div>
+                     nan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_14ab1615a0241047bc6e7ed77688895f.setIcon(icon_568a90815a2c6ae21d758473e0ecf099);
+            
+    
+            var marker_54f759ab5e14f9e81160b2196f18d592 = L.marker(
+                [47.3926867, 8.4930633],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_21929f49244a6d1186825a901647cf0d = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_e1f614856ad021670c59ce07cdb40575 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_e9fa0197261b89dccfced2e1d301e6b1 = $(`<div id="html_e9fa0197261b89dccfced2e1d301e6b1" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> nan<br>     <b>Operator:</b> energie360°<br>     <b>Name:</b> nan     </div>`)[0];
+                popup_e1f614856ad021670c59ce07cdb40575.setContent(html_e9fa0197261b89dccfced2e1d301e6b1);
+            
+        
+
+        marker_54f759ab5e14f9e81160b2196f18d592.bindPopup(popup_e1f614856ad021670c59ce07cdb40575)
+        ;
+
+        
+    
+    
+            marker_54f759ab5e14f9e81160b2196f18d592.bindTooltip(
+                `<div>
+                     nan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_54f759ab5e14f9e81160b2196f18d592.setIcon(icon_21929f49244a6d1186825a901647cf0d);
+            
+    
+            var marker_1ff1ce819b1915c8fd1d3f498f308986 = L.marker(
+                [47.403561, 8.4969407],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_cd251356a4bcde5c9ec46500e66ee8b3 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_da3e105d17ff00584c9593f3045973bf = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_d57825670d6bf75e56271aa50af81b57 = $(`<div id="html_d57825670d6bf75e56271aa50af81b57" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> A.H. Meyer & Cie<br>     <b>Name:</b> Garage Zwicky     </div>`)[0];
+                popup_da3e105d17ff00584c9593f3045973bf.setContent(html_d57825670d6bf75e56271aa50af81b57);
+            
+        
+
+        marker_1ff1ce819b1915c8fd1d3f498f308986.bindPopup(popup_da3e105d17ff00584c9593f3045973bf)
+        ;
+
+        
+    
+    
+            marker_1ff1ce819b1915c8fd1d3f498f308986.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1ff1ce819b1915c8fd1d3f498f308986.setIcon(icon_cd251356a4bcde5c9ec46500e66ee8b3);
+            
+    
+            var marker_d699a2af005516f44df0ab172efd74a3 = L.marker(
+                [47.4094061, 8.5502005],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_854c0741bf84c0387f191ad2c5a74246 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_029bbc79bfbd454ffe7e40383576e6f1 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_43086ee885bebffb553e138aa10b6535 = $(`<div id="html_43086ee885bebffb553e138aa10b6535" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Eni<br>     <b>Operator:</b> nan<br>     <b>Name:</b> Eni Dörflistrasse     </div>`)[0];
+                popup_029bbc79bfbd454ffe7e40383576e6f1.setContent(html_43086ee885bebffb553e138aa10b6535);
+            
+        
+
+        marker_d699a2af005516f44df0ab172efd74a3.bindPopup(popup_029bbc79bfbd454ffe7e40383576e6f1)
+        ;
+
+        
+    
+    
+            marker_d699a2af005516f44df0ab172efd74a3.bindTooltip(
+                `<div>
+                     Eni
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d699a2af005516f44df0ab172efd74a3.setIcon(icon_854c0741bf84c0387f191ad2c5a74246);
+            
+    
+            var marker_1deb2233a13298022a01b8a3fe3bcfb2 = L.marker(
+                [47.415096, 8.565655],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_8a4db0129a4f1f740cc634d97d303145 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_d52385b2a2713a06cc13ea8351aace9b = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_3f2304944c1a2773b53ea32167b7048a = $(`<div id="html_3f2304944c1a2773b53ea32167b7048a" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> nan<br>     <b>Operator:</b> Stadt Zürich<br>     <b>Name:</b> nan     </div>`)[0];
+                popup_d52385b2a2713a06cc13ea8351aace9b.setContent(html_3f2304944c1a2773b53ea32167b7048a);
+            
+        
+
+        marker_1deb2233a13298022a01b8a3fe3bcfb2.bindPopup(popup_d52385b2a2713a06cc13ea8351aace9b)
+        ;
+
+        
+    
+    
+            marker_1deb2233a13298022a01b8a3fe3bcfb2.bindTooltip(
+                `<div>
+                     nan
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_1deb2233a13298022a01b8a3fe3bcfb2.setIcon(icon_8a4db0129a4f1f740cc634d97d303145);
+            
+    
+            var marker_d3fa19cb005341ee61e453072f07f7d0 = L.marker(
+                [47.3903746, 8.4914032],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_de5e76446cd03a31135f50ccc098843f = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_15f915be7cf02f4c1acece8c85ec9a19 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_be45ba0eebfe181b39a6c9dacd0ee7bb = $(`<div id="html_be45ba0eebfe181b39a6c9dacd0ee7bb" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> SOCAR<br>     <b>Operator:</b> SOCAR Energy Switzerland<br>     <b>Name:</b> SOCAR Hohlstrasse     </div>`)[0];
+                popup_15f915be7cf02f4c1acece8c85ec9a19.setContent(html_be45ba0eebfe181b39a6c9dacd0ee7bb);
+            
+        
+
+        marker_d3fa19cb005341ee61e453072f07f7d0.bindPopup(popup_15f915be7cf02f4c1acece8c85ec9a19)
+        ;
+
+        
+    
+    
+            marker_d3fa19cb005341ee61e453072f07f7d0.bindTooltip(
+                `<div>
+                     SOCAR
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_d3fa19cb005341ee61e453072f07f7d0.setIcon(icon_de5e76446cd03a31135f50ccc098843f);
+            
+    
+            var marker_3bd4f5d625b5ffe8684d52f5e938beda = L.marker(
+                [47.3629104, 8.5174423],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_d2a34ee2ac88e8d7372c4b636358cbfd = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_639f89a9ef8ccea41fb770147450c618 = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_0fb86d99162e28de89c1f1ea25d9402f = $(`<div id="html_0fb86d99162e28de89c1f1ea25d9402f" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Independent<br>     <b>Operator:</b> Chemia Brugg<br>     <b>Name:</b> Tankstelle Binz     </div>`)[0];
+                popup_639f89a9ef8ccea41fb770147450c618.setContent(html_0fb86d99162e28de89c1f1ea25d9402f);
+            
+        
+
+        marker_3bd4f5d625b5ffe8684d52f5e938beda.bindPopup(popup_639f89a9ef8ccea41fb770147450c618)
+        ;
+
+        
+    
+    
+            marker_3bd4f5d625b5ffe8684d52f5e938beda.bindTooltip(
+                `<div>
+                     Independent
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_3bd4f5d625b5ffe8684d52f5e938beda.setIcon(icon_d2a34ee2ac88e8d7372c4b636358cbfd);
+            
+    
+            var marker_cf85131be771e5f5c107de877aa75d51 = L.marker(
+                [47.3592424, 8.5700521],
+                {
+}
+            ).addTo(map_7b1f4ce9e911bae6cf07f84b69907fea);
+        
+    
+            var icon_c8c1b95eb9df58c649cf69a620933662 = L.AwesomeMarkers.icon(
+                {
+  "markerColor": "red",
+  "iconColor": "white",
+  "icon": "tint",
+  "prefix": "fa",
+  "extraClasses": "fa-rotate-0",
+}
+            );
+        
+    
+        var popup_f76e4af04080fd51dbc26cb964ccda7a = L.popup({
+  "maxWidth": 250,
+});
+
+        
+            
+                var html_c0b7ea4a545e5fb4dc1de672ddbe0a1d = $(`<div id="html_c0b7ea4a545e5fb4dc1de672ddbe0a1d" style="width: 100.0%; height: 100.0%;">     <b>Brand:</b> Avia<br>     <b>Operator:</b> Avia Osterwalder Zürich<br>     <b>Name:</b> Avia Forchstrasse     </div>`)[0];
+                popup_f76e4af04080fd51dbc26cb964ccda7a.setContent(html_c0b7ea4a545e5fb4dc1de672ddbe0a1d);
+            
+        
+
+        marker_cf85131be771e5f5c107de877aa75d51.bindPopup(popup_f76e4af04080fd51dbc26cb964ccda7a)
+        ;
+
+        
+    
+    
+            marker_cf85131be771e5f5c107de877aa75d51.bindTooltip(
+                `<div>
+                     Avia
+                 </div>`,
+                {
+  "sticky": true,
+}
+            );
+        
+    
+                marker_cf85131be771e5f5c107de877aa75d51.setIcon(icon_c8c1b95eb9df58c649cf69a620933662);
+            
+</script>
+</html>

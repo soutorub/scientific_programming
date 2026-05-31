@@ -1,0 +1,81 @@
+osm_id,osm_type,lat,lon,name,brand,operator,fuel_type
+47744371,node,47.3995257,8.4973287,Coop Tankstelle Höngg,Coop,Coop Mineraloel,/
+52741787,node,47.3815928,8.5095448,Shell Hardau,Shell,Shell (Switzerland),yes/yes
+73124669,node,47.3811098,8.4921479,Migrol Service Flurstrasse,Migrol,Migrol,yes/yes
+83423432,node,47.3374315,8.5302419,Shell Wollishofen,Shell,,yes/yes
+83424882,node,47.3398175,8.5298146,Avia Service Wollishofen,Avia,Avia Osterwalder Zürich,/
+103096904,node,47.3459074,8.534658,Avia Wollishofen Franz,Avia,A.H. Meyer & Cie,yes/yes
+103102957,node,47.3485725,8.5340966,BP Service Wollishofen,BP,,yes/yes
+135633811,node,47.3980896,8.5399105,Migrol Tankstelle Milchbuck,Migrol,Migrol,yes/yes
+268469414,node,47.3695212,8.5107127,Tankstelle Wyss,Independent,,yes/yes
+271223009,node,47.3534438,8.5768921,BP Balgrist,BP,,yes/yes
+283181019,node,47.3860523,8.5319464,Migrol Service Sihlquai,Migrol,Migrol,yes/yes
+299752761,node,47.3803229,8.5463543,Scall,Independent,,/
+300418712,node,47.393705,8.5059844,Avia Hardturmstrasse,Avia,A.H. Meyer & Cie,/
+301208147,node,47.3728411,8.5211422,BP Service Wiedikon,BP,,yes/yes
+311976893,node,47.4010238,8.4915916,Shell Winzerstrasse,Shell,Moveri,yes/yes
+312012092,node,47.4141963,8.518214,Migrol Service Glaubten,Migrol,Migrol,yes/yes
+313268393,node,47.3802915,8.4940158,Shell Rautistrasse,Shell,Shell (Switzerland),yes/yes
+318410355,node,47.419653,8.556201,Migrol Service Thurgauerstrasse,Shell,Migrol,yes/yes
+321362564,node,47.3917824,8.5424928,Tamoil,Tamoil,,yes/yes
+331317250,node,47.3674023,8.4943259,Migrol Service Triemli,Shell,Migrol,yes/yes
+338639819,node,47.3812597,8.5377769,Avia Service HB,Avia,Avia Osterwalder Zürich,yes/yes
+474982856,node,47.3702456,8.5125042,Avia Birmensdorferstrasse,Avia,A.H. Meyer & Cie,yes/yes
+480320550,node,47.3617439,8.5181345,Tamoil,Tamoil,Tamoil,/
+500922433,node,47.4161953,8.5640414,SOCAR Opfikon,SOCAR,SOCAR Energy Switzerland,yes/yes
+578221549,node,47.3403588,8.5193947,SOCAR Manegg,Socar,SOCAR Energy Switzerland,yes/yes
+771363263,node,47.4184706,8.5468061,,Independent,,yes/yes
+775938665,node,47.3857365,8.4936574,BP Emil Frey Altstetten,BP,,yes/yes
+926942122,node,47.4049521,8.5497781,Avia Dörflistrasse,Avia,Avia Osterwalder Zürich,yes/yes
+935831675,node,47.4133069,8.5208931,,Coop,Coop Mineraloel,yes/yes
+935831690,node,47.4123963,8.5239096,Wehntaler Tankstelle,Independent,Wehntaler Autoservice,yes/yes
+935832538,node,47.4113884,8.5268978,Avia Regensberg,Avia,A.H. Meyer & Cie,yes/yes
+970843021,node,47.404558,8.5563801,Ruedi Rüssel,Ruedi Rüssel,Semes Automobile,yes/yes
+1258330247,node,47.4071384,8.5473271,Discount-Tankstelle,Independent,,yes/yes
+1361319683,node,47.3678087,8.564167,Shell Bergstrasse (Automat),Shell,,yes/yes
+1361319687,node,47.367931,8.5644227,Shell Bergstrasse (Shop),Shell,,/yes
+1363040120,node,47.3625248,8.5480473,Migrol Tankstelle AMAG Utoquai,Migrol,Migrol,yes/yes
+1366349899,node,47.3624756,8.5681877,BP Witikonerstrasse,BP,,/
+1487761567,node,47.3943519,8.5297022,Migrol Tankstelle Wipkingen,Migrol,Migrol,yes/yes
+1488703647,node,47.4063348,8.5836156,Migrol Service Schwamendingen,Migrol,Migrol,yes/yes
+1488717329,node,47.4073726,8.5865182,Avia Ueberlandstrasse,Avia,Avia Osterwalder Zürich,yes/yes
+1488738142,node,47.4062266,8.5831505,Migrol Tankstelle Schwamendingen,Migrol,Migrol,yes/yes
+1492328346,node,47.402714,8.577361,Tamoil,Tamoil,,yes/
+1513964564,node,47.361231,8.5224826,Eni Manessestrasse,Eni,,yes/yes
+1525269396,node,47.391139,8.5267589,Discount-Tankstelle,Independent,,yes/yes
+1528037438,node,47.4039392,8.56718,Ruedi Rüssel,Ruedi Rüssel,,/
+2214821219,node,47.3684503,8.4967351,SOCAR Triemli,SOCAR,SOCAR Energy Switzerland,yes/yes
+2697748656,node,47.3881064,8.5245108,Rigoni & Co,,Rigoni & Co,yes/yes
+2741686844,node,47.39498,8.4870209,Avia Bernerstrasse Nord,Avia,A.H. Meyer & Cie,yes/yes
+2800588923,node,47.3560414,8.5536233,Avia Dufourstrasse,Avia,Avia Osterwalder Zürich,yes/yes
+3274467749,node,47.3583523,8.5872489,,Independent,,yes/yes
+3358399930,node,47.4067224,8.5382677,BP Allenmoos,BP,,/
+3620863237,node,47.375256,8.490236,Garage Resegatti,Avia,A.H. Meyer & Cie,yes/yes
+3725780316,node,47.4151254,8.5183109,,OIL!,Hürstwald Garage,yes/yes
+3856077382,node,47.3360236,8.5179148,Allmend Automobile,Avia,Avia Osterwalder Zürich,/
+4062268285,node,47.37199,8.5357876,,,,yes/yes
+4077197252,node,47.4171988,8.5405286,Osterwalder Zürich,Avia,Avia Osterwalder Zürich,yes/yes
+4089028880,node,47.3790129,8.5491137,BEBECO,BEBECO,Schweizer Armee,yes/yes
+4089035400,node,47.410457,8.5121281,BEBECO,BEBECO,Schweizer Armee,yes/yes
+4433552056,node,47.4138567,8.5493439,SOCAR,SOCAR,,/
+4820137500,node,47.3353262,8.5408584,SOCAR Seebucht,Socar,SOCAR Energy Switzerland,yes/yes
+4820601025,node,47.3522069,8.5585571,Shell Hornegg,Shell,Shell (Switzerland),yes/yes
+4820601028,node,47.361258,8.5478749,Migrol Tankstelle Seefeld,Migrol,Migrol,yes/yes
+4833061686,node,47.3940505,8.4820011,J. H. Keller AG,Avia,Avia Osterwalder Zürich,yes/yes
+4833061689,node,47.3662195,8.5336955,Avia Zur Palme,Avia,A.H. Meyer & Cie,yes/yes
+4833061690,node,47.3876457,8.5333362,Avia Wasserwerkstrasse,Avia,Avia Osterwalder Zürich,yes/yes
+4847777858,node,47.3875329,8.4986948,Coop Tankstelle Letzipark,Coop,Coop Mineraloel,/
+5242262577,node,47.358531,8.5319389,Eni Seestrasse,Eni,,/
+5370500872,node,47.4109696,8.5266314,Avia,Avia,Avia Osterwalder Zürich,yes/yes
+5678614593,node,47.3753876,8.5398134,,,Stadt Zürich,/
+7051810399,node,47.3891035,8.5101259,,,,/
+7914281885,node,47.3384962,8.5404282,Hafen Wollishofen,,,/
+10598764329,node,47.3822548,8.5224674,,,SBB,yes/
+11767444235,node,47.3928416,8.4929085,,,energie360°,/
+12722342587,node,47.3926867,8.4930633,,,energie360°,/
+31421906,way,47.403561,8.4969407,Garage Zwicky,Avia,A.H. Meyer & Cie,yes/yes
+99294730,way,47.4094061,8.5502005,Eni Dörflistrasse,Eni,,yes/yes
+310875931,way,47.415096,8.565655,,,Stadt Zürich,/
+318349007,way,47.3903746,8.4914032,SOCAR Hohlstrasse,SOCAR,SOCAR Energy Switzerland,yes/yes
+345539646,way,47.3629104,8.5174423,Tankstelle Binz,Independent,Chemia Brugg,yes/yes
+1222699704,way,47.3592424,8.5700521,Avia Forchstrasse,Avia,Avia Osterwalder Zürich,no/yes

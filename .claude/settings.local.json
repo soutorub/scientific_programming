@@ -5,7 +5,8 @@
       "Bash(jupyter nbconvert:*)",
       "Bash(python3:*)",
       "Bash(pip show:*)",
-      "Bash(docker-compose ps:*)"
+      "Bash(docker-compose ps:*)",
+      "WebFetch(domain:www.zhaw.ch)"
     ]
   }
 }

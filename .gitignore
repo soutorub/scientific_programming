@@ -46,17 +46,17 @@ temp_assets
 kaggle.json
 
 # Single files / solutions
-solution_challenge_week_01.ipynb
-solution_challenge_week_01.html
-solution_challenge_week_02.ipynb
-solution_challenge_week_03.ipynb
-solution_challenge_week_04.ipynb
-solution_challenge_week_05
-solution_challenge_week_06.ipynb
-solution_challenge_week_07.ipynb
-solution_challenge_week_08.ipynb
-solution_challenge_week_09.ipynb
-solution_challenge_week_10.ipynb
+# solution_challenge_week_01.ipynb
+# solution_challenge_week_02.ipynb
+# solution_challenge_week_03.ipynb
+# solution_challenge_week_04.ipynb
+# solution_challenge_week_05
+# solution_challenge_week_06.ipynb
+# solution_challenge_week_07.ipynb
+# solution_challenge_week_08.ipynb
+# solution_challenge_week_09.ipynb
+# solution_challenge_week_10.ipynb
+# solution_challenge_week_11.ipynb
 
 Titanic-Dataset.csv
 BigmacPrice.csv
@@ -64,8 +64,8 @@ chicken_data.xlsx
 dice_game.py
 water_level_data.py
 hydro_data.csv
-index.html
-app.py
+# index.html
+# app.py
 
 # Single folders
 # Week_01/
